@@ -1,6 +1,6 @@
-# APS — Automation and Process Systems
+# APS — Process and Automation Systems
 
-High-performance corporate brochure website for **APS (Automation and Process Systems)**, showcasing industrial automation skids, process machinery lines, and genuine OEM spare parts supply.
+High-performance corporate brochure website for **APS (Process and Automation Systems)**, showcasing industrial automation skids, process machinery lines, and genuine OEM spare parts supply.
 
 ## Key Features
 

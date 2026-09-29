@@ -1,6 +1,6 @@
-# APS — AUTOMATION AND PROCESS SYSTEMS
+# APS — PROCESS AND AUTOMATION SYSTEMS
 ## Master Visual Design System & Production Specification (v1.0)
-**Client:** APS – Automation and Process Systems  
+**Client:** APS – Process and Automation Systems  
 **Format:** Enterprise Single-Page Brochure (Long-Scroll)  
 **Reference Site:** Studiova (`studiova-nuxt.netlify.app`)  
 **Status:** Approved for Build  
@@ -148,7 +148,7 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
 ## 06. Complete Page Layout & Approved Content Blueprint
 
 ### 0. Header (Sticky 104px)
-- **Brand**: `APS` | Automation & Process Systems
+- **Brand**: `APS` | Process & Automation Systems
 - **Nav Items**: Process Systems | Machines & Spares | OEM Sourcing | Contact
 - **Action**: Gold Pill — `Request Quote`
 
@@ -163,9 +163,9 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
 - **Body**: `Industrial automation and process solutions, sourced directly from verified OEM partners.`
 - **CTA**: Primary Gold Pill — `Learn More ↓`
 
-#### Panel 2 — Automation & Process Systems (Center | Tone Navy `#132448`)
+#### Panel 2 — Process & Automation Systems (Center | Tone Navy `#132448`)
 - **Badge**: `01`
-- **Pill**: `AUTOMATION & PROCESS`
+- **Pill**: `PROCESS & AUTOMATION`
 - **Heading (H2)**: `End-to-End Process Automation` (48px, `-0.4px` tracking)
 - **Body**: `Field instrumentation, control systems, and automation hardware — engineered and delivered to specification.`
 - **CTA**: Outline Pill — `Explore Systems →`
@@ -191,10 +191,10 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
 
 ---
 
-### Section 02 — Automation and Process Systems (Dark | Navy `#0D1E3D`)
+### Section 02 — Process and Automation Systems (Dark | Navy `#0D1E3D`)
 - **Badge**: `02` (Gold)
 - **Pill**: `WHAT WE SUPPLY`
-- **Heading (H2)**: `Automation and Process Systems`
+- **Heading (H2)**: `Process and Automation Systems`
 - **Body**: `We deliver instrumentation, control architectures, and process packages across the energy, utility, and heavy manufacturing sectors.`
 - **3 Service Cards (32px padding, 12px radius, gold geometric icon)**:
   1. **Field Instrumentation** — Pressure, flow, temperature, and level transmitters engineered for demanding operating envelopes.
@@ -223,7 +223,7 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
 - **Dual Column Architecture (7/12 & 5/12 Split)**:
   - **Left (7 cols)**: Minimalist RFQ Enquiry Form (Single-line inputs, clean underline borders, Gold Pill `Submit Enquiry` button).
   - **Right (5 cols)**: Verified corporate coordinates:
-    - **Entity**: `APS – Automation and Process Systems`
+    - **Entity**: `APS – Process and Automation Systems`
     - **Procurement Desk**: `enquiries@aps-systems.com`
     - **Service Level**: `Direct response within 24 hours on all RFQs`
 
