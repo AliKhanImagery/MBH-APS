@@ -622,7 +622,13 @@
 }
 
 .section-dark .product-img-wrap {
+  background-color: var(--aps-navy-tint);
   border-color: var(--aps-inox-08);
+}
+
+.section-light .product-img-wrap {
+  background-color: #FFFFFF;
+  border-color: rgba(13, 30, 61, 0.08);
 }
 
 .product-img-wrap img {
