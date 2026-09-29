@@ -1131,10 +1131,11 @@
 .spares-team-card .spares-card-title {
   font-family: var(--font-primary);
   font-size: 22px;
+  line-height: 28px;
   font-weight: 800;
   letter-spacing: -0.4px;
   color: var(--aps-inox-white);
-  margin-bottom: 2px;
+  margin-bottom: var(--space-1);
   transition: color var(--transition-fast);
 }
 
