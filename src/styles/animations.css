@@ -1,0 +1,33 @@
+/* ==========================================================================
+   APS DESIGN SYSTEM — ANIMATIONS & TRANSITIONS (12.0)
+   Strictly ease/linear. No bounce, spring, or elastic easing.
+   ========================================================================== */
+
+/* Scroll-triggered staggered entrance */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 80ms; }
+.delay-2 { transition-delay: 160ms; }
+.delay-3 { transition-delay: 240ms; }
+.delay-4 { transition-delay: 320ms; }
+.delay-5 { transition-delay: 400ms; }
+
+/* Micro-interactions */
+.hover-lift {
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}

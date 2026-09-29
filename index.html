@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APS — Automation and Process Systems | Spares & After-Sales</title>
+  <meta name="description" content="Precision automation, process systems, OEM machinery, and genuine spare parts for industrial continuity.">
+
+  <!-- Google Fonts: Manrope (400, 500, 700, 800) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       00 — GLOBAL NAVIGATION (104px Sticky)
+       ======================================================================== -->
+  <header class="site-nav" id="main-nav">
+    <div class="nav-container">
+      <a href="#" class="nav-brand" aria-label="APS — Process & Automation Systems">
+        <img src="/assets/aps_logo_light.png" alt="APS — Process & Automation Systems" class="nav-logo" />
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#oem-direct" class="nav-link">OEM Sourcing</a></li>
+          <li><a href="#automation-systems" class="nav-link">What We Supply</a></li>
+          <li><a href="#process-machines" class="nav-link">Process Machines</a></li>
+          <li><a href="#spares-components" class="nav-link">Spares & Components</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">
+          <span>Request Quote</span>
+          <span class="btn-circle-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ========================================================================
+         ABOVE-THE-FOLD — 3-PANEL BROCHURE TRIPTYCH (100vh)
+         ======================================================================== -->
+    <section class="hero-triptych" aria-label="Hero Overview">
+      
+      <!-- Panel 1: Brand Hero (Left) -->
+      <article class="triptych-panel panel-brand">
+        <div class="panel-content">
+          <h1 class="fade-up delay-1">Precision Systems.<br>Reliable Supply.</h1>
+          <div class="rule-accent fade-up delay-2"></div>
+          <p class="fade-up delay-3">Industrial automation and process solutions, sourced directly from verified OEM partners.</p>
+          <a href="#oem-direct" class="btn btn-primary fade-up delay-4">
+            <span>Learn More</span>
+            <span class="btn-circle-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Panel 2: Automation & Process Systems (Center with Subtle Macro Image) -->
+      <article class="triptych-panel panel-automation">
+        <img src="/assets/hero_automation.jpg" alt="" class="panel-bg-img" aria-hidden="true" />
+        <div class="panel-overlay"></div>
+        <div class="panel-content">
+          <div class="section-meta-row fade-up delay-1">
+            <span class="accent-diamond">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,0 16,8 24,12 16,16 12,24 8,16 0,12 8,8"/>
+              </svg>
+            </span>
+            <span class="pill-label">Automation & Process</span>
+          </div>
+          <h2 class="fade-up delay-2">End-to-End Process Automation</h2>
+          <p class="fade-up delay-3">Field instrumentation, control systems, and automation hardware — engineered and delivered to specification.</p>
+          <a href="#automation-systems" class="btn btn-outline fade-up delay-4">
+            <span>Explore Systems</span>
+            <span class="btn-circle-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Panel 3: Machines & Spares (Right with Subtle Macro Image) -->
+      <article class="triptych-panel panel-spares">
+        <img src="/assets/hero_machinery.jpg" alt="" class="panel-bg-img" aria-hidden="true" />
+        <div class="panel-overlay"></div>
+        <div class="panel-content">
+          <div class="section-meta-row fade-up delay-1">
+            <span class="accent-diamond">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12,0 16,8 24,12 16,16 12,24 8,16 0,12 8,8"/>
+              </svg>
+            </span>
+            <span class="pill-label">Machines & Spares</span>
+          </div>
+          <h2 class="fade-up delay-2">OEM Machinery and Spare Parts</h2>
+          <p class="fade-up delay-3">Genuine machinery and authentic replacement parts, maintaining plant continuity and uptime.</p>
+          <a href="#process-machines" class="btn btn-outline fade-up delay-4">
+            <span>Explore Spares</span>
+            <span class="btn-circle-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ========================================================================
+         SECTION 01 — OEM PARTNERSHIP (Light — Inox White with Generous Breathing Space)
+         ======================================================================== -->
+    <section id="oem-direct" class="section section-light" aria-labelledby="oem-heading">
+      <!-- Image 3 Background Architectural Watermark -->
+      <div class="watermark-graphic" aria-hidden="true">
+        <svg width="580" height="580" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+          <circle cx="50" cy="50" r="46" stroke-width="0.7" opacity="0.35"/>
+          <polygon points="50,4 62,38 96,50 62,62 50,96 38,62 4,50 38,38" stroke-width="0.8"/>
+          <circle cx="50" cy="50" r="24" stroke-width="0.7"/>
+          <line x1="50" y1="4" x2="50" y2="96" stroke-width="0.5" stroke-dasharray="2 2"/>
+          <line x1="4" y1="50" x2="96" y2="50" stroke-width="0.5" stroke-dasharray="2 2"/>
+        </svg>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 1;">
+        
+        <header class="studiova-opener fade-up delay-1">
+          <div class="opener-meta">
+            <span class="opener-num-circle">01</span>
+            <span class="opener-line"></span>
+            <span class="pill-label">OEM Direct</span>
+          </div>
+          <div class="opener-title-wrap">
+            <h2 id="oem-heading">Quality at the Source</h2>
+            <p class="body-lead">APS sources directly through manufacturer-authorised channels, ensuring absolute traceability, technical compliance, and supply continuity for mission-critical operations.</p>
+          </div>
+        </header>
+
+        <!-- Studiova's 3-Figure Credibility Architecture (Image 3) -->
+        <div class="stats-row fade-up delay-2">
+          <div class="stat-block">
+            <span class="stat-figure">100%</span>
+            <span class="stat-title">Genuine OEM Provenance</span>
+            <p class="stat-desc">Acquired exclusively through certified primary manufacturer lines.</p>
+            <div style="margin-top: var(--space-8);">
+              <a href="#automation-systems" class="btn btn-primary">
+                <span>Explore Systems</span>
+                <span class="btn-circle-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="stat-block">
+            <span class="stat-figure">0%</span>
+            <span class="stat-title">Tolerance Deviation</span>
+            <p class="stat-desc">Cross-referenced against original engineering datasheets and operational limits.</p>
+          </div>
+
+          <div class="stat-block">
+            <span class="stat-figure">24h</span>
+            <span class="stat-title">Rapid RFQ Dispatch</span>
+            <p class="stat-desc">Direct technical quotation turnaround for mission-critical procurement.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 02 — WHAT WE SUPPLY (Light — Inox White)
+         ======================================================================== -->
+    <section id="automation-systems" class="section section-light" aria-labelledby="automation-heading">
+      <div class="container">
+
+        <!-- Section Chip at top of the section -->
+        <div class="opener-meta fade-up delay-1" style="margin-bottom: var(--space-8);">
+          <span class="opener-num-circle">02</span>
+          <span class="opener-line"></span>
+          <span class="pill-label">What We Supply</span>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 1: Left Tall Feature Card -->
+          <article class="bento-card-tall fade-up delay-2">
+            <div>
+              <h2 id="automation-heading">Automation and Process Systems</h2>
+              <p class="bento-lead">Turnkey engineering services covering physical installation, system architecture, and site commissioning.</p>
+            </div>
+
+            <div class="bento-stat-wrap">
+              <div class="bento-bottom-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Turnkey Engineering Delivery</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Center Top Card (Electrical and mechanical installation) -->
+          <article class="bento-card bento-card-dark fade-up delay-2">
+            <div class="bento-card-header">
+              <span class="bento-card-num">01</span>
+              <div class="bento-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4>Electrical and mechanical installation</h4>
+              <p>Turnkey site execution for process skids, high-pressure piping manifolds, field power distribution, and signal routing.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Center Bottom Card (Automation and control) -->
+          <article class="bento-card bento-card-dark fade-up delay-3">
+            <div class="bento-card-header">
+              <span class="bento-card-num">02</span>
+              <div class="bento-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4>Automation and control</h4>
+              <p>Architecture, PLC programming, DCS integration, and SCADA engineering configured to plant standards.</p>
+            </div>
+          </article>
+
+          <!-- Card 4: Right Tall Inox Card (Commissioning and startUP) -->
+          <article class="bento-card-tall-right fade-up delay-2">
+            <div>
+              <div class="bento-card-header">
+                <span class="bento-card-num">03</span>
+                <div class="bento-card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <h4>Commissioning and startUP</h4>
+              <p>Comprehensive dry-testing, I/O verification, hot/cold water trials, and final operational performance handover.</p>
+            </div>
+
+            <div class="bento-bottom-action">
+              <span class="action-tag">Operational Handover</span>
+              <div class="bento-circle-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 03 — PROCESS MACHINES & APPLICATIONS (Light — Inox White)
+         ======================================================================== -->
+    <section id="process-machines" class="section section-light" aria-labelledby="machines-heading">
+      <div class="container">
+        
+        <header class="studiova-opener fade-up delay-1">
+          <div class="opener-meta">
+            <span class="opener-num-circle">03</span>
+            <span class="opener-line"></span>
+            <span class="pill-label">Process Machines</span>
+          </div>
+          <div class="opener-title-wrap">
+            <h2 id="machines-heading">Process Machinery and Line Solutions</h2>
+            <p class="body-lead">Complete machinery lines and engineered equipment tailored for high-volume beverage, liquid food, and industrial gas applications.</p>
+          </div>
+        </header>
+
+        <div class="grid-3">
+          <!-- Card 1: CSD -->
+          <article class="product-card fade-up delay-2">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="CSD Machinery Lines" loading="lazy" />
+              <div class="product-arrow-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">CSD Lines</h3>
+              <div class="product-tags">
+                <span class="product-tag">Isobaric Filling</span>
+                <span class="product-tag">Carbonation</span>
+                <span class="product-tag">Deaeration</span>
+              </div>
+              <p class="product-desc">Isobaric carbonation, vacuum deaeration, high-speed syrup blending, and pressurized can/bottle filling lines.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Dairy Industry -->
+          <article class="product-card fade-up delay-3">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="Dairy Industry Processing Systems" loading="lazy" />
+              <div class="product-arrow-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Dairy Industry</h3>
+              <div class="product-tags">
+                <span class="product-tag">HTST Pasteurization</span>
+                <span class="product-tag">Homogenization</span>
+                <span class="product-tag">Separation</span>
+              </div>
+              <p class="product-desc">Hygienic HTST pasteurizers, high-pressure homogenizers, sterile tank storage, and centrifugal cream separators.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Juice -->
+          <article class="product-card fade-up delay-4">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80" alt="Juice and Liquid Food Processing" loading="lazy" />
+              <div class="product-arrow-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Juice & Liquid Food</h3>
+              <div class="product-tags">
+                <span class="product-tag">Flash Pasteurizers</span>
+                <span class="product-tag">Pulp Blending</span>
+                <span class="product-tag">Aseptic Handling</span>
+              </div>
+              <p class="product-desc">Continuous flash pasteurization, concentrate handling, pulp mixing, and hot-fill bottling machinery.</p>
+            </div>
+          </article>
+
+          <!-- Card 4: Water Treatment -->
+          <article class="product-card fade-up delay-2">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80" alt="Industrial Water Treatment Plants" loading="lazy" />
+              <div class="product-arrow-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Water Treatment</h3>
+              <div class="product-tags">
+                <span class="product-tag">Reverse Osmosis</span>
+                <span class="product-tag">Media Filtration</span>
+                <span class="product-tag">UV Disinfection</span>
+              </div>
+              <p class="product-desc">Multi-stage media filtration, reverse osmosis (RO) purification plants, and ultraviolet (UV) disinfection skids.</p>
+            </div>
+          </article>
+
+          <!-- Card 5: Clean-in-Place (CIP) -->
+          <article class="product-card fade-up delay-3">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Automated Clean-in-Place CIP Skids" loading="lazy" />
+              <div class="product-arrow-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Clean-in-Place (CIP)</h3>
+              <div class="product-tags">
+                <span class="product-tag">Automated Sanitization</span>
+                <span class="product-tag">Chemical Dosing</span>
+                <span class="product-tag">Multi-Tank Recovery</span>
+              </div>
+              <p class="product-desc">Automated multi-tank CIP systems, chemical dosing loops, recovery tanks, and validated hygienic sanitization cycles.</p>
+            </div>
+          </article>
+
+          <!-- Card 6: Product Recovery -->
+          <article class="product-card fade-up delay-4">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Process Line Product Recovery" loading="lazy" />
+              <div class="product-arrow-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Product Recovery</h3>
+              <div class="product-tags">
+                <span class="product-tag">Pigging Systems</span>
+                <span class="product-tag">Line Evacuation</span>
+                <span class="product-tag">Rinse Recovery</span>
+              </div>
+              <p class="product-desc">Advanced pigging systems, line evacuation skids, and rinse product recovery units minimizing batch waste.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 04 — INDUSTRIAL SPARES & COMPONENTS (Dark — Navy)
+         ======================================================================== -->
+    <section id="spares-components" class="section section-dark" aria-labelledby="spares-heading">
+      <div class="container">
+        
+        <header class="studiova-opener fade-up delay-1">
+          <div class="opener-meta">
+            <span class="opener-num-circle">04</span>
+            <span class="opener-line"></span>
+            <span class="pill-label">Spares & Components</span>
+          </div>
+          <div class="opener-title-wrap">
+            <h2 id="spares-heading">Critical Process Spares & Components</h2>
+            <p class="body-lead">Direct-from-manufacturer spare parts inventory to eliminate unscheduled plant downtime, ensure mechanical compatibility, and maintain factory warranty.</p>
+          </div>
+        </header>
+
+        <!-- Auto-animating Carousel matching Studiova Team Card Architecture (Image 1) -->
+        <div class="spares-carousel-wrapper fade-up delay-2" id="spares-carousel" aria-roledescription="carousel">
+          <div class="spares-carousel-track-container">
+            <div class="spares-carousel-track" id="spares-carousel-track">
+              
+              <!-- Card 1: Pumps -->
+              <article class="spares-team-card" role="group" aria-roledescription="slide" aria-label="1 of 5: Pumps">
+                <div class="spares-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Process Pumps & Mechanical Seals" loading="lazy" />
+                </div>
+                <div class="spares-content">
+                  <h3 class="spares-card-title">Pumps</h3>
+                  <span class="spares-card-tag">Centrifugal & Rotary Lobe</span>
+                  <p class="spares-card-desc">Centrifugal, positive displacement, hygienic rotary lobe, and progressive cavity process pumps with certified seals.</p>
+                </div>
+              </article>
+
+              <!-- Card 2: Valves -->
+              <article class="spares-team-card" role="group" aria-roledescription="slide" aria-label="2 of 5: Valves">
+                <div class="spares-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=800&q=80" alt="Sanitary Valves & Actuators" loading="lazy" />
+                </div>
+                <div class="spares-content">
+                  <h3 class="spares-card-title">Valves</h3>
+                  <span class="spares-card-tag">Mixproof & Control Valves</span>
+                  <p class="spares-card-desc">Sanitary mixproof, seat, butterfly, diaphragm, and automated pneumatic control valves with smart positioners.</p>
+                </div>
+              </article>
+
+              <!-- Card 3: Heat Exchangers -->
+              <article class="spares-team-card" role="group" aria-roledescription="slide" aria-label="3 of 5: Heat Exchangers">
+                <div class="spares-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=800&q=80" alt="Heat Exchanger Plates and Seals" loading="lazy" />
+                </div>
+                <div class="spares-content">
+                  <h3 class="spares-card-title">Heat Exchangers</h3>
+                  <span class="spares-card-tag">Plate & Tubular Exchangers</span>
+                  <p class="spares-card-desc">Gasketed plate, tubular, and scraped-surface heat exchanger plates, frames, and OEM certified elastomer seals.</p>
+                </div>
+              </article>
+
+              <!-- Card 4: Instrumentation -->
+              <article class="spares-team-card" role="group" aria-roledescription="slide" aria-label="4 of 5: Instrumentation">
+                <div class="spares-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?auto=format&fit=crop&w=800&q=80" alt="Field Instrumentation Sensors" loading="lazy" />
+                </div>
+                <div class="spares-content">
+                  <h3 class="spares-card-title">Instrumentation</h3>
+                  <span class="spares-card-tag">Transmitters & Sensors</span>
+                  <p class="spares-card-desc">Calibrated flowmeters, pressure transmitters, RTD temperature probes, and conductivity sensors for inline monitoring.</p>
+                </div>
+              </article>
+
+              <!-- Card 5: Electrical Cabinets and Panels -->
+              <article class="spares-team-card" role="group" aria-roledescription="slide" aria-label="5 of 5: Electrical Cabinets and Panels">
+                <div class="spares-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Electrical Cabinets and Panels" loading="lazy" />
+                </div>
+                <div class="spares-content">
+                  <h3 class="spares-card-title">Electrical Cabinets & Panels</h3>
+                  <span class="spares-card-tag">MCC & Automation Panels</span>
+                  <p class="spares-card-desc">Motor Control Centers (MCC), VFD drive panels, PLC remote I/O junction boxes, and safety disconnect assemblies.</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Carousel Controls: Prev, Next & Progress Indicators -->
+          <div class="carousel-controls-row">
+            <div class="carousel-dots" id="spares-carousel-indicators">
+              <!-- Dynamically populated by JS -->
+            </div>
+            <div class="carousel-nav-btns">
+              <button class="carousel-nav-btn prev" id="spares-prev-btn" aria-label="Previous Slide">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+              </button>
+              <button class="carousel-nav-btn next" id="spares-next-btn" aria-label="Next Slide">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 05 — ENTERPRISE CONTACT & RFQ (Dark — Navy)
+         ======================================================================== -->
+    <section id="contact" class="section section-dark" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <header class="studiova-opener fade-up delay-1">
+          <div class="opener-meta">
+            <span class="opener-num-circle">05</span>
+            <span class="opener-line"></span>
+            <span class="pill-label">Get In Touch</span>
+          </div>
+          <div class="opener-title-wrap">
+            <h2 id="contact-heading">Speak to Our Team</h2>
+            <p class="body-lead">For enquiries, part numbers, or project requirements — contact us directly.</p>
+          </div>
+        </header>
+
+        <div class="split-7-5">
+          <!-- Left: Minimalist RFQ Action Form -->
+          <div class="fade-up delay-2">
+            <form id="rfq-form" class="rfq-form">
+              <div class="form-group">
+                <label for="org-name">Organization / Plant</label>
+                <input type="text" id="org-name" class="form-input" placeholder="e.g. Petrochemical or Beverage Plant" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-name">Technical Lead / Procurement Officer</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Full Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Corporate Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="procurement@organization.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="part-details">Part Numbers & Project Requirements</label>
+                <textarea id="part-details" class="form-textarea" placeholder="List OEM part numbers, specs, or required delivery schedules..." required></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-primary" style="margin-top: var(--space-4);">
+                  <span>Send an Enquiry</span>
+                  <span class="btn-circle-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <p id="form-status" class="form-status" role="alert"></p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: Verified Corporate Coordinates -->
+          <div class="fade-up delay-3">
+            <div class="coordinates-card">
+              <div class="coordinate-item">
+                <span class="coord-label">Company</span>
+                <span class="coord-val">APS – Automation and Process Systems</span>
+              </div>
+
+              <div class="coordinate-item">
+                <span class="coord-label">Procurement Desk</span>
+                <span class="coord-val">enquiries@aps-systems.com</span>
+              </div>
+
+              <div class="coordinate-item">
+                <span class="coord-label">Direct Line</span>
+                <span class="coord-val">+971 (0) 4 000 0000</span>
+              </div>
+
+              <div class="coordinate-item">
+                <span class="coord-label">Engineering Hub</span>
+                <span class="coord-val">Dubai, United Arab Emirates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       06 — ARCHITECTURAL FOOTER (Dark — Navy)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <p class="footer-statement">Precision systems engineered for industrial reliability.</p>
+        
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <span class="footer-col-title">Navigation</span>
+            <a href="#oem-direct">OEM Sourcing</a>
+            <a href="#automation-systems">What We Supply</a>
+            <a href="#process-machines">Process Machines</a>
+            <a href="#spares-components">Spares & Components</a>
+            <a href="#contact">Contact Desk</a>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">Compliance</span>
+            <a href="#">OEM Traceability</a>
+            <a href="#">Specification Standards</a>
+            <a href="#">Terms of Supply</a>
+          </div>
+        </div>
+
+        <button id="scroll-to-top" class="btn-icon" aria-label="Back to Top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 APS – Automation and Process Systems. All rights reserved.</span>
+        <span>Verified OEM Supply Architecture</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

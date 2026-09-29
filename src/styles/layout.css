@@ -1,0 +1,370 @@
+/* ==========================================================================
+   APS DESIGN SYSTEM — LAYOUT & GRID ARCHITECTURE (v3.0)
+   Aligning exactly to Studiova reference layout, 40/30/30 hero, and image holders
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter-desktop);
+  padding-right: var(--gutter-desktop);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: var(--gutter-tablet);
+    padding-right: var(--gutter-tablet);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: var(--gutter-mobile);
+    padding-right: var(--gutter-mobile);
+  }
+}
+
+/* Section Rhythms with Generous Breathing Space */
+.section {
+  position: relative;
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+  width: 100%;
+}
+
+.section-heroic {
+  padding-top: var(--space-32);
+  padding-bottom: var(--space-32);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
+}
+
+/* Dark Section Assignments */
+.section-dark {
+  background-color: var(--aps-navy);
+  color: var(--aps-inox-white);
+}
+
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: var(--aps-inox-white);
+}
+
+.section-dark .body-lead,
+.section-dark .body-text {
+  color: var(--aps-inox-75);
+}
+
+/* Light Section Assignments (Brushed Inox Steel with Clean Atmosphere) */
+.section-light {
+  background-color: var(--aps-inox-white);
+  color: var(--aps-charcoal);
+  position: relative;
+}
+
+/* Subtle architectural grid watermark in Light Sections (Studiova luxury detail) */
+.section-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(13, 30, 61, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 30, 61, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+}
+
+.section-light h2,
+.section-light h3,
+.section-light h4 {
+  color: var(--aps-navy);
+}
+
+.section-light .body-lead,
+.section-light .body-text {
+  color: var(--aps-charcoal);
+}
+
+/* ==========================================================================
+   STUDIOVA-ALIGNED SECTION OPENER ARCHITECTURE
+   ========================================================================== */
+.studiova-opener {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-10);
+  margin-bottom: var(--space-12);
+  align-items: flex-start;
+}
+
+.opener-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+}
+
+.opener-num-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.section-light .opener-num-circle {
+  background-color: var(--aps-navy);
+  color: var(--aps-inox-white);
+}
+
+.opener-line {
+  width: 40px;
+  height: 1px;
+  background-color: var(--aps-navy-20);
+  flex-shrink: 0;
+}
+
+.section-dark .opener-line {
+  background-color: var(--aps-gold-30);
+}
+
+.opener-title-wrap h2 {
+  font-family: var(--font-primary);
+  font-size: clamp(34px, 3.4vw, 48px);
+  line-height: 1.18;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  max-width: 24ch;
+}
+
+.opener-title-wrap .body-lead {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 0;
+  max-width: 65ch;
+}
+
+@media (max-width: 1024px) {
+  .studiova-opener {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+/* Grid Systems */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+
+.split-7-5 {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: var(--space-12);
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+  .split-7-5 {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* ==========================================================================
+   08 — ABOVE-THE-FOLD 40% / 30% / 30% TRIPTYCH WITH SCREEN PADDING
+   ========================================================================== */
+.hero-triptych {
+  display: grid;
+  grid-template-columns: 4.5fr 2.75fr 2.75fr; /* Panel 1 takes 45% horizontal space (+5% width) */
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: var(--aps-navy);
+}
+
+.triptych-panel {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-right: 1px solid var(--aps-gold-15);
+  overflow: hidden;
+  transition: background-color var(--transition-normal);
+}
+
+.triptych-panel:last-child {
+  border-right: none;
+}
+
+/* Ample Screen Border Gutters to prevent text touching borders */
+.panel-brand {
+  background-color: var(--aps-navy);
+  padding: calc(var(--nav-height) + var(--space-10)) var(--space-8) var(--space-16) clamp(48px, 5vw, 84px);
+}
+
+.panel-automation {
+  background-color: var(--aps-navy-tint);
+  padding: calc(var(--nav-height) + var(--space-10)) var(--space-8) var(--space-16) var(--space-8);
+}
+
+.panel-spares {
+  background-color: var(--aps-navy);
+  padding: calc(var(--nav-height) + var(--space-10)) clamp(48px, 5vw, 84px) var(--space-16) var(--space-8);
+}
+
+/* Background image layer with enhanced visibility */
+.panel-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.36;
+  mix-blend-mode: luminosity;
+  transition: opacity 0.4s ease, transform 0.6s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.triptych-panel:hover .panel-bg-img {
+  opacity: 0.48;
+  transform: scale(1.03);
+}
+
+.panel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(13, 30, 61, 0.52) 0%, rgba(13, 30, 61, 0.80) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.panel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Panel 1 Original Typography Scale from MD file (128px max display scale) */
+.panel-brand h1 {
+  font-family: var(--font-primary);
+  font-size: clamp(64px, 5.8vw, 112px);
+  line-height: 1.0;
+  letter-spacing: -2px;
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+  word-break: keep-all;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.panel-brand .rule-accent {
+  width: 100%;
+  height: 1px;
+  background-color: var(--aps-gold-30);
+  margin-bottom: var(--space-6);
+}
+
+.panel-brand p {
+  color: var(--aps-inox-75);
+  margin-bottom: var(--space-8);
+  max-width: 48ch;
+}
+
+/* Panel 2 & 3 Headings */
+.triptych-panel:not(.panel-brand) h2 {
+  font-family: var(--font-primary);
+  font-size: clamp(28px, 2.4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  margin-bottom: var(--space-5);
+  word-break: keep-all;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.triptych-panel:not(.panel-brand) p {
+  color: var(--aps-inox-75);
+  margin-bottom: var(--space-8);
+}
+
+@media (max-width: 1024px) {
+  .hero-triptych {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .triptych-panel {
+    min-height: 480px;
+    border-right: none;
+    border-bottom: 1px solid var(--aps-gold-15);
+    padding: var(--space-16) var(--gutter-tablet) !important;
+  }
+  .panel-brand {
+    padding-top: calc(var(--nav-height) + var(--space-10)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .triptych-panel {
+    padding: var(--space-12) var(--gutter-mobile) !important;
+  }
+  .panel-brand {
+    padding-top: calc(var(--nav-height) + var(--space-6)) !important;
+  }
+}

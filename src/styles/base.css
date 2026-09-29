@@ -1,0 +1,143 @@
+/* ==========================================================================
+   APS DESIGN SYSTEM — BASE & TYPOGRAPHY STYLES
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--aps-inox-white);
+  background-color: var(--aps-navy);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--aps-navy);
+  color: var(--aps-inox-white);
+}
+
+/* Headings with Exact Tracking Signatures */
+h1, .h1 {
+  font-family: var(--font-primary);
+  font-size: 128px;
+  line-height: 1.0;
+  font-weight: 700;
+  letter-spacing: var(--ls-h1);
+  text-transform: none;
+}
+
+h2, .h2 {
+  font-family: var(--font-primary);
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: var(--ls-h2);
+  text-transform: none;
+}
+
+h3, .h3 {
+  font-family: var(--font-primary);
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  letter-spacing: var(--ls-h3);
+}
+
+h4, .h4 {
+  font-family: var(--font-primary);
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: var(--ls-h4);
+}
+
+h5, .h5 {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+p, .body-text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: var(--ls-body);
+  max-width: 65ch; /* Luxury breathing space rule */
+}
+
+.body-lead {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  max-width: 65ch;
+}
+
+.body-small {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.text-steel {
+  color: var(--aps-steel);
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+/* Responsive Type Scaling */
+@media (max-width: 1024px) {
+  h1, .h1 {
+    font-size: 72px;
+    line-height: 1.05;
+    letter-spacing: var(--ls-h1);
+  }
+  h2, .h2 {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: var(--ls-h2);
+  }
+  h3, .h3 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  h1, .h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: var(--ls-h1);
+  }
+  h2, .h2 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: var(--ls-h2);
+  }
+  h3, .h3 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  p, .body-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

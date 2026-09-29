@@ -1,0 +1,1229 @@
+/* ==========================================================================
+   APS DESIGN SYSTEM — COMPONENT SPECIFICATIONS (v2.0)
+   Accurately translating Studiova's visual architecture & accent mechanisms
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   07.1 — Navigation
+   -------------------------------------------------------------------------- */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 1000;
+  transition: background-color var(--transition-smooth), border-color var(--transition-smooth), backdrop-filter var(--transition-smooth);
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.site-nav.scrolled {
+  background-color: rgba(13, 30, 61, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--aps-gold-15);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 clamp(32px, 4.5vw, 72px);
+  gap: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 var(--gutter-tablet);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-container {
+    padding: 0 var(--gutter-mobile);
+  }
+}
+
+/* Brand Logo & Wordmark */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.nav-logo {
+  height: clamp(40px, 3.2vw, 48px);
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.nav-brand:hover .nav-logo {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+@media (max-width: 640px) {
+  .nav-logo {
+    height: 30px;
+    max-width: 190px;
+  }
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 1.8vw, 32px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 1;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--aps-inox-white);
+  transition: color var(--transition-fast);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--aps-gold);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+/* Mobile Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--aps-inox-white);
+  cursor: pointer;
+  padding: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+  .nav-menu {
+    position: fixed;
+    top: var(--nav-height);
+    right: -100%;
+    width: 320px;
+    height: calc(100vh - var(--nav-height));
+    background-color: var(--aps-navy);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-10) var(--space-8);
+    gap: var(--space-6);
+    border-left: 1px solid var(--aps-gold-15);
+    transition: right var(--transition-smooth);
+    box-shadow: -12px 0 32px rgba(0, 0, 0, 0.6);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   07.2 — Signature Button System (Studiova Circle Arrow Anatomy)
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+/* Primary Gold Pill CTA with Circle Arrow Icon */
+.btn-primary {
+  background-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+  padding: 6px 6px 6px 24px;
+  border-radius: var(--radius-pill);
+  border: none;
+  gap: var(--space-3);
+}
+
+.btn-primary .btn-circle-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--aps-charcoal);
+  color: var(--aps-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background-color: var(--aps-gold-hover);
+  color: var(--aps-charcoal);
+}
+
+.btn-primary:hover .btn-circle-icon {
+  transform: translateX(3px);
+  background-color: #0D1E3D;
+  color: #FFFFFF;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Secondary Outline Pill CTA with Circle Arrow Icon */
+.btn-outline {
+  background-color: transparent;
+  color: var(--aps-gold);
+  border: 1.5px solid var(--aps-gold);
+  padding: 5px 5px 5px 22px;
+  border-radius: var(--radius-pill);
+  gap: var(--space-3);
+}
+
+.btn-outline .btn-circle-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--aps-gold-12);
+  color: var(--aps-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn-outline:hover {
+  background-color: var(--aps-gold-12);
+  color: var(--aps-gold);
+}
+
+.btn-outline:hover .btn-circle-icon {
+  transform: translateX(3px);
+  background-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+}
+
+.btn-outline:active {
+  transform: scale(0.98);
+}
+
+/* Circular Standalone Icon Button */
+.btn-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--aps-inox-08);
+  border: 1px solid var(--aps-inox-15);
+  color: var(--aps-inox-white);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.btn-icon:hover {
+  background-color: var(--aps-gold);
+  border-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   07.3 — Signature Accent Diamond & Pill Labels
+   -------------------------------------------------------------------------- */
+.section-meta-row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+/* Studiova's 4-Point Accent Diamond/Star */
+.accent-diamond {
+  width: 14px;
+  height: 14px;
+  color: var(--aps-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pill-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: var(--ls-pill);
+  text-transform: uppercase;
+}
+
+/* Dark Pill on Light Sections (Matches Studiova black pill tags) */
+.section-light .pill-label {
+  background-color: var(--aps-navy);
+  color: var(--aps-inox-white);
+}
+
+/* Gold Tinted Pill on Dark Sections */
+.section-dark .pill-label {
+  background-color: var(--aps-gold-12);
+  color: var(--aps-gold);
+  border: 1px solid var(--aps-gold-30);
+}
+
+/* --------------------------------------------------------------------------
+   07.4 — Stats & Credibility Figures (Studiova Section 1 Layout)
+   -------------------------------------------------------------------------- */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-10);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--aps-navy-12);
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-figure {
+  font-family: var(--font-primary);
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: var(--aps-navy);
+  margin-bottom: var(--space-2);
+}
+
+.stat-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--aps-charcoal);
+  margin-bottom: var(--space-1);
+}
+
+.stat-desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--aps-steel);
+  max-width: 32ch;
+}
+
+@media (max-width: 768px) {
+  .stats-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  .stat-figure {
+    font-size: 48px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   07.5 — High-Clarity Service Cards
+   -------------------------------------------------------------------------- */
+.service-card {
+  padding: var(--space-8);
+  border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color var(--transition-normal), background-color var(--transition-normal), transform var(--transition-normal);
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Dark section cards */
+.section-dark .service-card {
+  background-color: var(--aps-inox-04);
+  border: 1px solid var(--aps-inox-08);
+}
+
+.section-dark .service-card:hover {
+  border-color: var(--aps-gold-30);
+  background-color: rgba(245, 245, 243, 0.07);
+}
+
+/* Light section cards (Pure white on brushed inox background) */
+.section-light .service-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(13, 30, 61, 0.08);
+  box-shadow: 0 4px 20px rgba(13, 30, 61, 0.04);
+}
+
+.section-light .service-card:hover {
+  border-color: var(--aps-gold);
+  box-shadow: 0 8px 28px rgba(13, 30, 61, 0.08);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: var(--space-6);
+}
+
+.card-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--aps-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-light .card-icon {
+  color: var(--aps-navy);
+}
+
+.card-num {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--aps-steel);
+}
+
+.service-card h4 {
+  margin-bottom: var(--space-3);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.service-card p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--aps-steel);
+}
+
+.section-light .service-card p {
+  color: var(--aps-charcoal);
+  opacity: 0.85;
+}
+
+/* --------------------------------------------------------------------------
+   07.6 — Minimalist RFQ Contact Architecture
+   -------------------------------------------------------------------------- */
+.rfq-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: var(--ls-pill);
+  text-transform: uppercase;
+  color: var(--aps-steel);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--aps-inox-15);
+  padding: var(--space-3) 0;
+  font-family: var(--font-primary);
+  font-size: 18px;
+  color: var(--aps-inox-white);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-bottom-color: var(--aps-gold);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--aps-inox-40);
+  font-size: 16px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-status {
+  font-size: 14px;
+  color: var(--aps-gold);
+  margin-top: var(--space-3);
+  display: none;
+}
+
+.coordinates-card {
+  padding: var(--space-8);
+  border-left: 1px solid var(--aps-gold-30);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.coordinate-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.coordinate-item .coord-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-pill);
+  color: var(--aps-gold);
+}
+
+.coordinate-item .coord-val {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--aps-inox-white);
+}
+
+/* --------------------------------------------------------------------------
+   07.7 — Footer
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--aps-navy);
+  border-top: 1px solid var(--aps-gold-15);
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-20);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-16);
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.footer-statement {
+  max-width: 22ch;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: var(--ls-h2);
+  color: var(--aps-inox-white);
+}
+
+.footer-links-grid {
+  display: flex;
+  gap: var(--space-12);
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-col-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-pill);
+  color: var(--aps-gold);
+  margin-bottom: var(--space-2);
+}
+
+.footer-col a {
+  font-size: 15px;
+  color: var(--aps-steel);
+}
+
+.footer-col a:hover {
+  color: var(--aps-inox-white);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--aps-inox-08);
+  font-size: 14px;
+  color: var(--aps-steel);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+/* --------------------------------------------------------------------------
+   07.8 — Studiova Product Image Holders (Featured Line Cards)
+   -------------------------------------------------------------------------- */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-normal);
+}
+
+.product-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--aps-navy);
+  border: 1px solid rgba(13, 30, 61, 0.08);
+}
+
+.section-dark .product-img-wrap {
+  border-color: var(--aps-inox-08);
+}
+
+.product-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* Hover Accent Circle Arrow Button (Studiova exact feature) */
+.product-arrow-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all var(--transition-fast);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.product-card:hover .product-arrow-badge {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.product-title {
+  font-family: var(--font-primary);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 1.25;
+  color: var(--aps-navy);
+  transition: color var(--transition-fast);
+}
+
+.section-dark .product-title {
+  color: var(--aps-inox-white);
+}
+
+.product-card:hover .product-title {
+  color: var(--aps-gold);
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.product-tag {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(13, 30, 61, 0.12);
+  color: var(--aps-steel);
+  background-color: transparent;
+}
+
+.section-dark .product-tag {
+  border-color: rgba(245, 245, 243, 0.15);
+  color: var(--aps-inox-75);
+}
+
+/* --------------------------------------------------------------------------
+   07.9 — Studiova Bento Grid Architecture (Section 02 — 4-Box Approved Layout)
+   -------------------------------------------------------------------------- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(240px, auto));
+  gap: var(--space-6);
+  width: 100%;
+}
+
+/* Card 1: Left Tall Feature Card (Studiova Accent Card with Section Eyebrow) */
+.bento-card-tall {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-radius: 20px;
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+  box-shadow: 0 12px 36px rgba(184, 150, 46, 0.18);
+  min-height: 510px;
+}
+
+/* Background decorative arc curve matching Studiova */
+.bento-card-tall::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.06) 70%, transparent 100%);
+  pointer-events: none;
+}
+
+.bento-card-tall .opener-meta {
+  margin-bottom: var(--space-5);
+}
+
+.bento-card-tall .opener-num-circle {
+  background-color: var(--aps-navy);
+  color: var(--aps-inox-white);
+}
+
+.bento-card-tall .opener-line {
+  background-color: rgba(28, 35, 49, 0.3);
+}
+
+.bento-card-tall .pill-label {
+  background-color: rgba(28, 35, 49, 0.12);
+  color: var(--aps-charcoal);
+  border: 1px solid rgba(28, 35, 49, 0.25);
+  font-weight: 800;
+}
+
+.bento-card-tall h2,
+.bento-card-tall h3 {
+  font-family: var(--font-primary);
+  font-size: clamp(30px, 2.6vw, 40px);
+  line-height: 1.18;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  color: var(--aps-charcoal);
+  margin-bottom: var(--space-4);
+}
+
+.bento-card-tall .bento-lead {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--aps-charcoal);
+  opacity: 0.92;
+  margin-bottom: 0;
+}
+
+.bento-card-tall .bento-stat-wrap {
+  margin-top: auto;
+  padding-top: var(--space-8);
+  position: relative;
+  z-index: 2;
+}
+
+.bento-card-tall .bento-bottom-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px 18px;
+  background-color: rgba(28, 35, 49, 0.12);
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--aps-charcoal);
+}
+
+/* General Bento Card */
+.bento-card {
+  border-radius: 20px;
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+}
+
+.bento-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: var(--space-5);
+}
+
+.bento-card-num {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--aps-gold);
+}
+
+.bento-card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(184, 150, 46, 0.12);
+  color: var(--aps-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card 2 & 3: Center Column Cards (Dark Navy with Gold Accents) */
+.bento-card-dark {
+  background-color: rgba(245, 245, 243, 0.05);
+  border: 1px solid var(--aps-inox-08);
+  color: var(--aps-inox-white);
+  min-height: 240px;
+}
+
+.bento-card-dark:hover {
+  border-color: var(--aps-gold-30);
+  background-color: rgba(245, 245, 243, 0.08);
+}
+
+.bento-card-dark h4 {
+  font-family: var(--font-primary);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: var(--space-3);
+  color: var(--aps-inox-white);
+}
+
+.bento-card-dark p {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--aps-steel);
+  margin-bottom: 0;
+}
+
+/* Card Styling when Section 02 is Light (White Background) */
+.section-light .bento-card-dark {
+  background-color: var(--aps-navy);
+  border: 1px solid rgba(13, 30, 61, 0.12);
+  color: var(--aps-inox-white);
+  box-shadow: 0 10px 30px rgba(13, 30, 61, 0.08);
+}
+
+.section-light .bento-card-dark:hover {
+  border-color: var(--aps-gold);
+  background-color: var(--aps-navy);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(13, 30, 61, 0.14);
+}
+
+.section-light .bento-card-dark h4 {
+  color: var(--aps-inox-white);
+}
+
+.section-light .bento-card-dark p {
+  color: var(--aps-inox-75);
+}
+
+/* Card 4: Right Tall Card (Studiova Inox Light Card for Commissioning & startUP) */
+.bento-card-tall-right {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  background-color: var(--aps-inox-white);
+  border: 1px solid rgba(13, 30, 61, 0.08);
+  color: var(--aps-charcoal);
+  border-radius: 20px;
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 510px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.bento-card-tall-right:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.section-light .bento-card-tall-right {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(13, 30, 61, 0.08);
+  box-shadow: 0 10px 30px rgba(13, 30, 61, 0.06);
+}
+
+.section-light .bento-card-tall-right:hover {
+  box-shadow: 0 16px 36px rgba(13, 30, 61, 0.1);
+}
+
+/* Subtle decorative arc curve like Studiova right card */
+.bento-card-tall-right::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 1px solid rgba(13, 30, 61, 0.08);
+  pointer-events: none;
+}
+
+.bento-card-tall-right .bento-card-num {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--aps-navy);
+}
+
+.bento-card-tall-right .bento-card-icon {
+  background-color: rgba(13, 30, 61, 0.08);
+  color: var(--aps-navy);
+}
+
+.bento-card-tall-right h4 {
+  font-family: var(--font-primary);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  color: var(--aps-navy);
+  margin-bottom: var(--space-4);
+}
+
+.bento-card-tall-right p {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--aps-charcoal);
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.bento-bottom-action {
+  margin-top: auto;
+  padding-top: var(--space-8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.bento-bottom-action .action-tag {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--aps-navy);
+  letter-spacing: 0.02em;
+}
+
+.bento-circle-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--aps-navy);
+  color: var(--aps-inox-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.bento-card-tall-right:hover .bento-circle-arrow {
+  transform: scale(1.08);
+  background-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+}
+
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .bento-card-tall {
+    grid-column: span 2;
+    grid-row: auto;
+    min-height: auto;
+  }
+  .bento-card-tall-right {
+    grid-column: span 2;
+    grid-row: auto;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .bento-card-tall {
+    grid-column: auto;
+    padding: var(--space-6);
+  }
+  .bento-card-tall-right {
+    grid-column: auto;
+    padding: var(--space-6);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   07.10 — Section 01 Architectural Watermark (Image 3 Aesthetic)
+   -------------------------------------------------------------------------- */
+.watermark-graphic {
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 580px;
+  height: 580px;
+  color: rgba(13, 30, 61, 0.045);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --------------------------------------------------------------------------
+   07.11 — Section 04 Spares Auto-Animating Carousel (Image 1 Architecture)
+   -------------------------------------------------------------------------- */
+.spares-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: var(--space-10);
+}
+
+.spares-carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.spares-carousel-track {
+  display: flex;
+  gap: var(--space-6);
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.spares-team-card {
+  flex: 0 0 calc((100% - (3 * var(--space-6))) / 4);
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.spares-team-card:hover {
+  transform: translateY(-4px);
+}
+
+.spares-team-card .spares-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--aps-navy-tint);
+}
+
+.spares-team-card .spares-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.spares-team-card:hover .spares-img-wrap img {
+  transform: scale(1.05);
+}
+
+.spares-team-card .spares-content {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+}
+
+.spares-team-card .spares-card-title {
+  font-family: var(--font-primary);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: var(--aps-inox-white);
+  margin-bottom: 2px;
+  transition: color var(--transition-fast);
+}
+
+.spares-team-card:hover .spares-card-title {
+  color: var(--aps-gold);
+}
+
+.spares-team-card .spares-card-tag {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--aps-gold);
+  letter-spacing: 0.03em;
+  margin-bottom: var(--space-2);
+}
+
+.spares-team-card .spares-card-desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--aps-steel);
+  margin-bottom: 0;
+}
+
+/* Carousel Controls & Indicators */
+.carousel-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-8);
+  padding-top: var(--space-4);
+}
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(245, 245, 243, 0.25);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  width: 24px;
+  border-radius: 4px;
+  background-color: var(--aps-gold);
+}
+
+.carousel-nav-btns {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.carousel-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(245, 245, 243, 0.08);
+  border: 1px solid var(--aps-inox-08);
+  color: var(--aps-inox-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.carousel-nav-btn:hover {
+  background-color: var(--aps-gold);
+  border-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .spares-team-card {
+    flex: 0 0 calc((100% - var(--space-6)) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .spares-team-card {
+    flex: 0 0 calc(100% - 48px);
+  }
+}
