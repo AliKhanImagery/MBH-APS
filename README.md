@@ -8,7 +8,7 @@ High-performance corporate brochure website for **APS (Automation and Process Sy
 - **Official Brand System**: Deep Navy (`#0D1E3D`), Signal Gold (`#B8962E`), and Brushed Inox White (`#F5F5F3`) palette with official APS vector typography and brand logo.
 - **Section 01 (OEM Direct)**: 3-figure credibility architecture (100% Genuine, 0% Tolerance, 24h RFQ Dispatch).
 - **Section 02 (What We Supply)**: Clean Bento grid layout featuring Turnkey Engineering, Installation, Control & SCADA, and Commissioning.
-- **Section 03 (Process Machines)**: Product application cards for CSD Lines, Dairy Industry, Juice & Liquid Food, Water Treatment, Clean-in-Place, and Product Recovery.
+- **Section 03 (Process Machines)**: Product application cards for CSD Process Systems, Dairy Industry, Juice & Liquid Food, Water Treatment, Clean-in-Place, and Product Recovery.
 - **Section 04 (Spares & Components)**: Auto-animating interactive carousel featuring pumps, valves, heat exchangers, instrumentation, and control cabinets.
 - **Section 05 (RFQ & Engineering Desk)**: Minimalist procurement contact form and plant operational coordinates.
 
