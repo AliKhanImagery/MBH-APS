@@ -309,27 +309,28 @@
 .stats-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-8);
-  margin-top: var(--space-12);
-  margin-bottom: var(--space-10);
-  padding-top: var(--space-8);
-  border-top: 1px solid var(--aps-navy-12);
+  gap: clamp(24px, 3.5vw, 48px);
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .stat-block {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border-top: 1px solid var(--aps-navy-15);
+  padding-top: var(--space-8);
 }
 
 .stat-figure {
   font-family: var(--font-primary);
-  font-size: 64px;
+  font-size: clamp(48px, 4.2vw, 64px);
   line-height: 1.05;
   font-weight: 700;
   letter-spacing: -2px;
   color: var(--aps-navy);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
 }
 
 .stat-title {
@@ -343,7 +344,12 @@
   font-size: 14px;
   line-height: 22px;
   color: var(--aps-steel);
-  max-width: 32ch;
+  max-width: 28ch;
+  margin-bottom: 0;
+}
+
+.stat-btn-wrap {
+  margin-top: var(--space-8);
 }
 
 @media (max-width: 768px) {

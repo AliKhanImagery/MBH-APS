@@ -136,11 +136,6 @@
   flex-shrink: 0;
 }
 
-.section-light .opener-num-circle {
-  background-color: var(--aps-navy);
-  color: var(--aps-inox-white);
-}
-
 .opener-line {
   width: 40px;
   height: 1px;
@@ -150,6 +145,63 @@
 
 .section-dark .opener-line {
   background-color: var(--aps-gold-30);
+}
+
+/* ==========================================================================
+   SECTION 01 — STUDIOVA CREDIBILITY GRID ARCHITECTURE
+   ========================================================================== */
+.section-01-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: clamp(40px, 5.5vw, 96px);
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.section-01-left {
+  position: relative;
+  padding-top: 6px;
+}
+
+.section-01-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-01-header {
+  margin-bottom: var(--space-12);
+}
+
+.section-01-header h2 {
+  font-family: var(--font-primary);
+  font-size: clamp(38px, 4vw, 56px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+  font-weight: 700;
+  color: var(--aps-navy);
+  margin-bottom: var(--space-5);
+  max-width: 22ch;
+}
+
+.section-01-header .body-lead {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--aps-charcoal);
+  opacity: 0.88;
+  max-width: 58ch;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .section-01-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .section-01-left {
+    position: static;
+  }
 }
 
 .opener-title-wrap h2 {
