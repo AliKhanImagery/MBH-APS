@@ -508,6 +508,103 @@
   display: none;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* Direct Email Hub (Section 05) */
+.direct-email-panel {
+  display: flex;
+  flex-direction: column;
+  padding-right: var(--space-6);
+}
+
+.direct-email-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-pill);
+  color: var(--aps-gold);
+  margin-bottom: var(--space-3);
+  display: inline-block;
+}
+
+.direct-email-title {
+  font-family: var(--font-primary);
+  font-size: clamp(28px, 2.5vw, 42px);
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--aps-inox-white);
+  letter-spacing: var(--ls-h2);
+  margin-bottom: var(--space-4);
+}
+
+.direct-email-desc {
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--aps-inox-75);
+  margin-bottom: var(--space-8);
+  max-width: 54ch;
+}
+
+.direct-email-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  margin-bottom: var(--space-8);
+}
+
+.direct-email-guarantee {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 14px;
+  color: var(--aps-inox-60);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--aps-inox-08);
+}
+
+.guarantee-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--aps-gold);
+  box-shadow: 0 0 0 0 rgba(184, 150, 46, 0.7);
+  animation: pulse-gold 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-gold {
+  0% {
+    box-shadow: 0 0 0 0 rgba(184, 150, 46, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(184, 150, 46, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 150, 46, 0);
+  }
+}
+
+.coord-link {
+  color: var(--aps-inox-white);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.coord-link:hover {
+  color: var(--aps-gold);
+}
+
+.footer-email-link {
+  color: var(--aps-gold) !important;
+  font-weight: 600;
+}
+
 .coordinates-card {
   padding: var(--space-8);
   border-left: 1px solid var(--aps-gold-30);

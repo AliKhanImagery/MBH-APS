@@ -53,30 +53,36 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach(el => el.classList.add('visible'));
   }
 
-  // 4. RFQ Form Submission Handler
-  const rfqForm = document.getElementById('rfq-form');
-  const formStatus = document.getElementById('form-status');
-  if (rfqForm) {
-    rfqForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const submitBtn = rfqForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Transmitting...';
-
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-        rfqForm.reset();
-        if (formStatus) {
-          formStatus.style.display = 'block';
-          formStatus.textContent = 'Enquiry logged successfully. Engineering desk reference generated.';
-          setTimeout(() => {
-            formStatus.style.display = 'none';
-          }, 6000);
+  // 4. Copy Email Address & Direct Mail Handler
+  const copyEmailBtn = document.getElementById('copy-email-btn');
+  const copyEmailText = document.getElementById('copy-email-text');
+  if (copyEmailBtn && copyEmailText) {
+    copyEmailBtn.addEventListener('click', async () => {
+      const email = copyEmailBtn.getAttribute('data-email') || 'sales@apsinox.com';
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(email);
+        } else {
+          const textArea = document.createElement('textarea');
+          textArea.value = email;
+          textArea.style.position = 'fixed';
+          textArea.style.left = '-999999px';
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          document.execCommand('copy');
+          textArea.remove();
         }
-      }, 700);
+        const originalText = copyEmailText.textContent;
+        copyEmailText.textContent = 'Email Copied!';
+        copyEmailBtn.style.borderColor = 'var(--aps-gold)';
+        setTimeout(() => {
+          copyEmailText.textContent = originalText;
+          copyEmailBtn.style.borderColor = '';
+        }, 2500);
+      } catch (err) {
+        console.error('Failed to copy email', err);
+      }
     });
   }
 

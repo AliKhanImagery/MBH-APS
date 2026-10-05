@@ -43,7 +43,7 @@
       </nav>
 
       <div class="nav-actions">
-        <a href="#contact" class="btn btn-primary">
+        <a href="mailto:sales@apsinox.com?subject=Quote%20Request%20-%20APS%20Process%20%26%20Automation%20Systems" class="btn btn-primary">
           <span>Request Quote</span>
           <span class="btn-circle-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -75,15 +75,26 @@
           <h1 class="fade-up delay-1">Precision Systems.<br>Reliable Supply.</h1>
           <div class="rule-accent fade-up delay-2"></div>
           <p class="fade-up delay-3">Industrial automation and process solutions, sourced directly from verified OEM partners.</p>
-          <a href="#oem-direct" class="btn btn-primary fade-up delay-4">
-            <span>Learn More</span>
-            <span class="btn-circle-icon">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            </span>
-          </a>
+          <div class="hero-actions fade-up delay-4">
+            <a href="mailto:sales@apsinox.com?subject=Enquiry%20-%20APS%20Process%20%26%20Automation%20Systems" class="btn btn-primary">
+              <span>Enquire Now</span>
+              <span class="btn-circle-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+            <a href="#oem-direct" class="btn btn-outline">
+              <span>Explore Sourcing</span>
+              <span class="btn-circle-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
       </article>
 
@@ -599,47 +610,47 @@
           </div>
           <div class="opener-title-wrap">
             <h2 id="contact-heading">Speak to Our Team</h2>
-            <p class="body-lead">For enquiries, part numbers, or project requirements — contact us directly.</p>
+            <p class="body-lead">For enquiries, part numbers, or turnkey project specs — reach our engineering sales desk directly at sales@apsinox.com.</p>
           </div>
         </header>
 
         <div class="split-7-5">
-          <!-- Left: Minimalist RFQ Action Form -->
+          <!-- Left: Direct Technical Sales & RFQ Hub -->
           <div class="fade-up delay-2">
-            <form id="rfq-form" class="rfq-form">
-              <div class="form-group">
-                <label for="org-name">Organization / Plant</label>
-                <input type="text" id="org-name" class="form-input" placeholder="e.g. Petrochemical or Beverage Plant" required>
-              </div>
+            <div class="direct-email-panel">
+              <span class="direct-email-eyebrow">Direct Engineering & Sales Desk</span>
+              <h3 class="direct-email-title">Have a Project or Require Critical Spares?</h3>
+              <p class="direct-email-desc">
+                Whether you are planning a turnkey process line, upgrading plant automation, or sourcing urgent OEM replacement parts — our technical sales team is ready to assist. Send your specifications, part numbers, or tender documents directly to our desk for an immediate response.
+              </p>
 
-              <div class="form-group">
-                <label for="contact-name">Technical Lead / Procurement Officer</label>
-                <input type="text" id="contact-name" class="form-input" placeholder="Full Name" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-email">Corporate Email</label>
-                <input type="email" id="contact-email" class="form-input" placeholder="procurement@organization.com" required>
-              </div>
-
-              <div class="form-group">
-                <label for="part-details">Part Numbers & Project Requirements</label>
-                <textarea id="part-details" class="form-textarea" placeholder="List OEM part numbers, specs, or required delivery schedules..." required></textarea>
-              </div>
-
-              <div>
-                <button type="submit" class="btn btn-primary" style="margin-top: var(--space-4);">
-                  <span>Send an Enquiry</span>
+              <div class="direct-email-actions">
+                <a href="mailto:sales@apsinox.com?subject=Project%20Enquiry%20%2F%20RFQ%20-%20APS%20Process%20%26%20Automation%20Systems" class="btn btn-primary" id="email-client-btn">
+                  <span>Email sales@apsinox.com</span>
                   <span class="btn-circle-icon">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
                   </span>
+                </a>
+
+                <button type="button" class="btn btn-outline" id="copy-email-btn" data-email="sales@apsinox.com" aria-label="Copy email address to clipboard">
+                  <span id="copy-email-text">Copy Email Address</span>
+                  <span class="btn-circle-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </span>
                 </button>
-                <p id="form-status" class="form-status" role="alert"></p>
               </div>
-            </form>
+
+              <div class="direct-email-guarantee">
+                <div class="guarantee-pulse" aria-hidden="true"></div>
+                <span>Guaranteed 24-hour technical response for verified enterprise enquiries</span>
+              </div>
+            </div>
           </div>
 
           <!-- Right: Verified Corporate Coordinates -->
@@ -651,8 +662,8 @@
               </div>
 
               <div class="coordinate-item">
-                <span class="coord-label">Procurement Desk</span>
-                <span class="coord-val">enquiries@aps-systems.com</span>
+                <span class="coord-label">Sales & Procurement Desk</span>
+                <a href="mailto:sales@apsinox.com" class="coord-val coord-link">sales@apsinox.com</a>
               </div>
 
               <div class="coordinate-item">
@@ -687,13 +698,13 @@
             <a href="#automation-systems">What We Supply</a>
             <a href="#process-machines">Process Machines</a>
             <a href="#spares-components">Spares & Components</a>
-            <a href="#contact">Contact Desk</a>
+            <a href="mailto:sales@apsinox.com">Contact Desk</a>
           </div>
 
           <div class="footer-col">
-            <span class="footer-col-title">Compliance</span>
+            <span class="footer-col-title">Direct Enquiries</span>
+            <a href="mailto:sales@apsinox.com" class="footer-email-link">sales@apsinox.com</a>
             <a href="#">OEM Traceability</a>
-            <a href="#">Specification Standards</a>
             <a href="#">Terms of Supply</a>
           </div>
         </div>

@@ -224,7 +224,7 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
   - **Left (7 cols)**: Minimalist RFQ Enquiry Form (Single-line inputs, clean underline borders, Gold Pill `Submit Enquiry` button).
   - **Right (5 cols)**: Verified corporate coordinates:
     - **Entity**: `APS – Process and Automation Systems`
-    - **Procurement Desk**: `enquiries@aps-systems.com`
+    - **Sales & Procurement Desk**: `sales@apsinox.com`
     - **Service Level**: `Direct response within 24 hours on all RFQs`
 
 ---
