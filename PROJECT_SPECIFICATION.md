@@ -225,6 +225,8 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
   - **Right (5 cols)**: Verified corporate coordinates:
     - **Entity**: `APS – Process and Automation Systems`
     - **Sales & Procurement Desk**: `sales@apsinox.com`
+    - **Direct Line**: `+971 553 606698`
+    - **Engineering Hub**: `Ajman, Dubai, United Arab Emirates`
     - **Service Level**: `Direct response within 24 hours on all RFQs`
 
 ---
