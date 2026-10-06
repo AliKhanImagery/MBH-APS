@@ -158,7 +158,7 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
 *Desktop: 3 edge-to-edge columns divided by 1px subtle gold lines. Mobile: stacked (min 480px).*
 
 #### Panel 1 — Brand Hero (Left | Navy `#0D1E3D`)
-- **Headline (H1)**: `Precision Systems. Reliable Supply.` (128px, `-2px` tracking)
+- **Headline (H1)**: `Reliable, Efficient, Consistent Process Systems.` (128px, `-2px` tracking)
 - **Divider**: 1px Gold rule line (`30% opacity`).
 - **Body**: `Industrial automation and process solutions, sourced directly from verified OEM partners.`
 - **CTA**: Primary Gold Pill — `Learn More ↓`
