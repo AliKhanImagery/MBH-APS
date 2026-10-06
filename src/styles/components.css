@@ -1337,3 +1337,167 @@
     flex: 0 0 calc(100% - 48px);
   }
 }
+
+/* --------------------------------------------------------------------------
+   07.8 — Architectural 404 Offline Stage
+   -------------------------------------------------------------------------- */
+.page-404 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--aps-navy);
+  background-image: 
+    radial-gradient(circle at 50% 25%, rgba(184, 150, 46, 0.09) 0%, transparent 60%),
+    linear-gradient(rgba(245, 245, 243, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 245, 243, 0.025) 1px, transparent 1px);
+  background-size: 100% 100%, 56px 56px, 56px 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stage-404-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--nav-height) + var(--space-8)) var(--space-6) var(--space-16);
+  position: relative;
+  z-index: 2;
+}
+
+.stage-404-card {
+  max-width: 820px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.stage-404-telemetry {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background-color: rgba(13, 30, 61, 0.85);
+  border: 1px solid var(--aps-gold-25);
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-pill);
+  color: var(--aps-gold);
+  margin-bottom: var(--space-6);
+}
+
+.telemetry-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--aps-gold);
+  box-shadow: 0 0 0 0 rgba(184, 150, 46, 0.8);
+  animation: pulse-gold 2s infinite;
+}
+
+.numeral-404 {
+  font-family: var(--font-primary);
+  font-size: clamp(96px, 14vw, 192px);
+  font-weight: 800;
+  line-height: 0.88;
+  letter-spacing: -6px;
+  color: var(--aps-inox-white);
+  background: linear-gradient(180deg, #FFFFFF 20%, rgba(245, 245, 243, 0.22) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  margin-bottom: var(--space-4);
+  position: relative;
+}
+
+.stage-404-title {
+  font-family: var(--font-primary);
+  font-size: clamp(26px, 3.2vw, 44px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: var(--ls-h2);
+  color: var(--aps-inox-white);
+  margin-bottom: var(--space-4);
+}
+
+.stage-404-desc {
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 28px;
+  color: var(--aps-inox-75);
+  max-width: 58ch;
+  margin-bottom: var(--space-8);
+}
+
+.stage-404-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-10);
+}
+
+.btn-home-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--aps-inox-75);
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+
+.btn-home-ghost:hover {
+  color: var(--aps-inox-white);
+  background-color: rgba(245, 245, 243, 0.06);
+}
+
+.stage-404-coordinates-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  padding: var(--space-4) var(--space-6);
+  border-radius: 12px;
+  background-color: rgba(19, 36, 72, 0.6);
+  border: 1px solid var(--aps-gold-15);
+  font-size: 13px;
+  color: var(--aps-inox-75);
+}
+
+.coord-item-pill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.coord-item-pill .coord-key {
+  color: var(--aps-gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-pill);
+  font-size: 11px;
+}
+
+.coord-item-pill a {
+  color: var(--aps-inox-white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.coord-item-pill a:hover {
+  color: var(--aps-gold);
+}
+
