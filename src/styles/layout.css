@@ -365,6 +365,14 @@
   hyphens: none;
 }
 
+.panel-brand h1 .hero-accent-text {
+  color: #CCB066;
+}
+
+.panel-brand h1 .hero-white-text {
+  color: #FFFFFF;
+}
+
 .panel-brand .rule-accent {
   width: 100%;
   height: 1px;
