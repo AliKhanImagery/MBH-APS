@@ -339,7 +339,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(13, 30, 61, 0.52) 0%, rgba(13, 30, 61, 0.80) 100%);
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -348,7 +348,7 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
 }
 
@@ -410,6 +410,17 @@
   .panel-brand {
     padding-top: calc(var(--nav-height) + var(--space-10)) !important;
   }
+
+  /* Enhanced mobile visibility for hero background machinery & automation images */
+  .panel-bg-img {
+    opacity: 0.72;
+    mix-blend-mode: normal;
+    filter: brightness(0.85) contrast(1.15) saturate(0.9);
+  }
+
+  .panel-overlay {
+    background: linear-gradient(180deg, rgba(13, 30, 61, 0.35) 0%, rgba(13, 30, 61, 0.68) 100%);
+  }
 }
 
 @media (max-width: 640px) {
@@ -418,5 +429,14 @@
   }
   .panel-brand {
     padding-top: calc(var(--nav-height) + var(--space-6)) !important;
+  }
+
+  .panel-bg-img {
+    opacity: 0.75;
+    filter: brightness(0.85) contrast(1.18) saturate(0.95);
+  }
+
+  .panel-overlay {
+    background: linear-gradient(180deg, rgba(13, 30, 61, 0.32) 0%, rgba(13, 30, 61, 0.65) 100%);
   }
 }
