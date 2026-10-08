@@ -268,3 +268,27 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
 - [x] Gold usage strictly capped (maximum 2 instances per viewport)
 - [x] 100vh 3-panel Triptych responsive collapse on tablet/mobile verified
 - [x] RFQ interactive validation and feedback working cleanly
+
+---
+
+## 10. Infrastructure & Admin Isolation Policy (CRITICAL GOVERNANCE)
+
+> **MANDATORY POLICY**: cPanel is strictly reserved for enterprise system administrators — NOT the development team. The development team must ALWAYS take strict precautions to never interfere with, alter, or disrupt administrator workflows, mail services, or cPanel accessibility.
+
+### 1. Administrative Boundaries & Ownership
+- **cPanel Hosting Server (`216.104.47.118`)**: Managed exclusively by System Administrators for corporate emails (`sales@apsinox.com`), DNS zone management, databases, FTP, and server configurations.
+- **Frontend Web Application (Vercel CDN `216.198.79.1`)**: Managed by the Development Team strictly for static client-side web assets, styling, and UI.
+
+### 2. Untouchable Admin Services & Direct Access Paths
+The following administrator routes and services are locked and must never be blocked, altered, or intercepted:
+- **cPanel Direct URL**: `https://cpanel.apsinox.com` (Standard HTTPS Port 443 — direct A record to `216.104.47.118`)
+- **cPanel Port 2083**: `https://mail.apsinox.com:2083` and `https://216.104.47.118:2083`
+- **Webmail Direct URL**: `https://webmail.apsinox.com` and `https://mail.apsinox.com:2096`
+- **Corporate Mail Routing**: `mail.apsinox.com` MX and ports `993` (IMAP SSL), `465`/`587` (SMTP SSL)
+- **Web Host Manager**: `https://whm.apsinox.com` and port `2087`
+
+### 3. Development Continuity & Frictionless Admin Access
+- The root `vercel.json` MUST maintain permanent edge redirects (`/cpanel` -> `https://cpanel.apsinox.com`, `/webmail` -> `https://webmail.apsinox.com`, `/whm` -> `https://mail.apsinox.com:2087`).
+- Frontend deployments, custom 404 pages, or SPA routing MUST NEVER trap, hide, or override administrative routes.
+- Development code must never alter DNS records relating to `mail.*`, `cpanel.*`, `webmail.*`, or MX records.
+
