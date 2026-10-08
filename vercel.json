@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    {
+      "source": "/cpanel",
+      "destination": "https://cpanel.apsinox.com",
+      "permanent": false
+    },
+    {
+      "source": "/cpanel/:path*",
+      "destination": "https://cpanel.apsinox.com",
+      "permanent": false
+    },
+    {
+      "source": "/webmail",
+      "destination": "https://webmail.apsinox.com",
+      "permanent": false
+    },
+    {
+      "source": "/webmail/:path*",
+      "destination": "https://webmail.apsinox.com",
+      "permanent": false
+    },
+    {
+      "source": "/whm",
+      "destination": "https://mail.apsinox.com:2087",
+      "permanent": false
+    },
+    {
+      "source": "/whm/:path*",
+      "destination": "https://mail.apsinox.com:2087",
+      "permanent": false
+    }
+  ]
+}
