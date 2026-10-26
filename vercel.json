@@ -29,6 +29,17 @@
       "source": "/whm/:path*",
       "destination": "https://mail.apsinox.com:2087",
       "permanent": false
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.apsinox.com"
+        }
+      ],
+      "destination": "https://apsinox.com/:path*",
+      "permanent": true
     }
   ]
 }
