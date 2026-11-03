@@ -1219,6 +1219,10 @@
   background-color: var(--aps-navy-tint);
 }
 
+.spares-team-card .spares-img-wrap picture {
+  display: contents;
+}
+
 .spares-team-card .spares-img-wrap img {
   width: 100%;
   height: 100%;
