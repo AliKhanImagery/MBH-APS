@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://apsinox.com/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/aps_logo_light.png</image:loc>
+      <image:title>APS Process and Automation Systems Monogram</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_pumps.webp</image:loc>
+      <image:title>APS Sanitary Industrial Process Pumps</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_valves.webp</image:loc>
+      <image:title>APS Hygienic Mix-Proof and Butterfly Process Valves</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_heatexchangers.webp</image:loc>
+      <image:title>APS Plate and Tubular Heat Exchanger Replacement Spares</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_instrumentation.webp</image:loc>
+      <image:title>APS Industrial Process Field Instrumentation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_electrical.webp</image:loc>
+      <image:title>APS Stainless Steel Electrical Cabinets and Automation Panels</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/product_csd.jpg</image:loc>
+      <image:title>Carbonated Soft Drink (CSD) Process Systems</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/product_dairy.webp</image:loc>
+      <image:title>Dairy Industry Pasteurization and Homogenization Systems</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/product_cip.png</image:loc>
+      <image:title>Automated Clean-in-Place (CIP) Multi-Tank Systems</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/product_water.png</image:loc>
+      <image:title>Industrial Water Treatment and Reverse Osmosis Plants</image:title>
+    </image:image>
   </url>
 </urlset>

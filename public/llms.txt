@@ -1,0 +1,34 @@
+# APS — Process and Automation Systems
+
+> APS (apsinox.com) provides turnkey industrial process automation, OEM food & beverage processing machinery, and authentic industrial spare parts with guaranteed 24-hour RFQ turnaround across the UAE, GCC, and worldwide.
+
+## Core Offerings
+
+- [OEM Direct Sourcing](https://apsinox.com/#oem-direct): 100% genuine provenance through manufacturer-authorised channels, specification compliance cross-referenced to original engineering datasheets, zero tolerance deviation, and full traceability.
+- [Process and Automation Systems](https://apsinox.com/#automation-systems): Turnkey mechanical & electrical installation, automated control architectures, PLC programming, DCS integration, SCADA engineering, and commissioning handover.
+- [Process Machinery & Line Solutions](https://apsinox.com/#process-machines): Complete modular processing lines for CSD (Carbonated Soft Drinks), Dairy, Juice & Liquid Food, Industrial Water Treatment (RO, UV, Media Filtration), Clean-in-Place (CIP skids), and Product Recovery (pigging systems).
+- [Critical Process Spares & Components](https://apsinox.com/#spares-components): Direct OEM replacement spares for sanitary pumps (centrifugal, lobe, progressive cavity), process valves (mix-proof, butterfly, aseptic diaphragm), plate and tubular heat exchangers, field instrumentation (pressure, flow, level, temperature), and IP66 stainless electrical cabinets.
+- [Frequently Asked Questions](https://apsinox.com/#faq): Procurement details, genuine OEM verification, supported brands, and delivery horizons.
+
+## Primary OEM Brands Supported
+
+APS maintains authorized supply channels for leading process engineering manufacturers including:
+- Alfa Laval
+- GEA Group
+- SPX Flow / APV
+- Tetra Pak
+- Krones
+- Siemens Industrial Automation
+- Endress+Hauser
+- Festo Pneumatics
+- Danfoss Drives & Controls
+
+## Corporate Coordinates & RFQ
+
+- **Legal Entity**: APS – Process and Automation Systems
+- **Domain**: https://apsinox.com
+- **Sales & Procurement Desk**: sales@apsinox.com
+- **Direct Phone**: +971 553 606698
+- **Engineering Hub**: Ajman, Dubai, United Arab Emirates
+- **Service Level**: Guaranteed 24-hour technical response on verified enterprise RFQs
+- **Full LLM Documentation**: https://apsinox.com/llms-full.txt
