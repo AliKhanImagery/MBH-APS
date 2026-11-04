@@ -22,6 +22,55 @@
   <meta name="theme-color" content="#0D1E3D">
 
   <link rel="stylesheet" href="./src/styles/main.css">
+
+  <!-- Structured data: Organization + News & Events section -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apsinox.com/#organization",
+        "name": "APS – Process and Automation Systems",
+        "url": "https://apsinox.com/",
+        "logo": "https://apsinox.com/assets/aps_logo.png",
+        "email": "sales@apsinox.com",
+        "telephone": "+971553606698",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Office CWS-1V-001833, 26th Floor, Amber Gem Tower, Sheikh Khalifa Street",
+          "addressLocality": "Ajman",
+          "addressCountry": "AE"
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "@id": "https://apsinox.com/#news-gulfood-manufacturing-2026",
+        "headline": "APS at Gulfood Manufacturing 2026, Dubai",
+        "description": "APS attended Gulfood Manufacturing 2026 at Dubai World Trade Centre, 3–5 November, meeting food and beverage producers to discuss process lines, automation and OEM spares.",
+        "datePublished": "2026-11-04",
+        "dateModified": "2026-11-04",
+        "url": "https://apsinox.com/#news",
+        "mainEntityOfPage": "https://apsinox.com/",
+        "image": "https://apsinox.com/assets/hero_automation.jpg",
+        "author": { "@id": "https://apsinox.com/#organization" },
+        "publisher": { "@id": "https://apsinox.com/#organization" },
+        "about": {
+          "@type": "Event",
+          "name": "Gulfood Manufacturing 2026",
+          "startDate": "2026-11-03",
+          "endDate": "2026-11-05",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Dubai World Trade Centre",
+            "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" }
+          }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -40,6 +89,7 @@
           <li><a href="#automation-systems" class="nav-link">What We Supply</a></li>
           <li><a href="#process-machines" class="nav-link">Process Machines</a></li>
           <li><a href="#spares-components" class="nav-link">Spares & Components</a></li>
+          <li><a href="#news" class="nav-link">News</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -599,14 +649,103 @@
     </section>
 
     <!-- ========================================================================
-         SECTION 05 — ENTERPRISE CONTACT & RFQ (Dark — Navy)
+         SECTION 05 — NEWS & EVENTS (Light — Inox White)
          ======================================================================== -->
-    <section id="contact" class="section section-dark" aria-labelledby="contact-heading">
-      <div class="container">
-        
+    <section id="news" class="section section-light" aria-labelledby="news-heading">
+      <div class="container" style="position: relative; z-index: 1;">
+
         <header class="studiova-opener fade-up delay-1">
           <div class="opener-meta">
             <span class="opener-num-circle">05</span>
+            <span class="opener-line"></span>
+            <span class="pill-label">News &amp; Events</span>
+          </div>
+          <div class="opener-title-wrap">
+            <h2 id="news-heading">News and events from APS</h2>
+            <p class="body-lead">Where APS has been, what we are working on, and how to reach our engineering desk in the UAE.</p>
+          </div>
+        </header>
+
+        <div class="news-grid">
+
+          <!-- Featured: Gulfood Manufacturing 2026 -->
+          <article class="news-feature fade-up delay-2" aria-labelledby="news-gulfood-title">
+            <div class="news-date-block">
+              <span class="accent-diamond" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,0 16,8 24,12 16,16 12,24 8,16 0,12 8,8"/></svg>
+              </span>
+              <time class="news-date-days" datetime="2026-11-03">03–05</time>
+              <span class="news-date-month">Nov 2026</span>
+              <span class="news-date-rule" aria-hidden="true"></span>
+              <span class="news-date-event">Gulfood Manufacturing</span>
+              <span class="news-date-venue">Dubai World Trade Centre</span>
+            </div>
+
+            <div class="news-feature-body">
+              <div class="news-meta">
+                <span class="news-tag">Event</span>
+                <time datetime="2026-11-04">November 2026</time>
+              </div>
+              <h3 id="news-gulfood-title" class="news-feature-title">APS at Gulfood Manufacturing 2026, Dubai</h3>
+              <p class="news-feature-lead">APS attended Gulfood Manufacturing 2026 at Dubai World Trade Centre, <span class="nowrap">3–5 November</span>, to meet dairy, beverage, juice and water treatment producers, and the equipment makers that supply them.</p>
+
+              <h4 class="news-list-title">What we discussed</h4>
+              <ul class="news-list">
+                <li>Process lines for CSD, dairy, juice and liquid food, water treatment, CIP and product recovery</li>
+                <li>Automation and control: PLC, DCS and SCADA engineering</li>
+                <li>Genuine OEM spares: pumps, valves, heat exchanger parts, instrumentation and panels</li>
+              </ul>
+
+              <div class="news-cta">
+                <p class="news-cta-text"><strong>Met us at the show, or missed us?</strong> Send your project specs or part numbers and our engineering desk will follow up.</p>
+                <div class="news-cta-actions">
+                  <a href="https://wa.me/971553606698?text=Hello%20APS%2C%20I%27d%20like%20to%20discuss%20a%20project%20or%20spare%20parts%20enquiry." class="btn btn-primary" target="_blank" rel="noopener">
+                    <span>Message us on WhatsApp</span>
+                    <span class="btn-circle-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+                    </span>
+                  </a>
+                  <a href="mailto:sales@apsinox.com?subject=Gulfood%20Manufacturing%202026%20-%20Follow-up%20with%20APS" class="btn btn-outline">
+                    <span>Email the engineering desk</span>
+                    <span class="btn-circle-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Secondary: Engineering desk -->
+          <article class="news-card fade-up delay-3" aria-labelledby="news-desk-title">
+            <div class="news-meta">
+              <span class="news-tag news-tag-light">Company</span>
+              <time datetime="2026-11-04">November 2026</time>
+            </div>
+            <h3 id="news-desk-title" class="news-card-title">Our engineering desk in Ajman is on WhatsApp</h3>
+            <p class="news-card-desc">Send part numbers, project specs or tender documents straight to the APS engineering sales desk on WhatsApp, as well as by email.</p>
+            <address class="news-card-address">
+              Office CWS-1V-001833, 26th Floor,<br>Amber Gem Tower, Sheikh Khalifa Street,<br>Ajman, UAE
+            </address>
+            <a href="https://wa.me/971553606698" class="news-card-link" target="_blank" rel="noopener">
+              <span>+971 553 606698</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 06 — ENTERPRISE CONTACT & RFQ (Dark — Navy)
+         ======================================================================== -->
+    <section id="contact" class="section section-dark" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="studiova-opener fade-up delay-1">
+          <div class="opener-meta">
+            <span class="opener-num-circle">06</span>
             <span class="opener-line"></span>
             <span class="pill-label">Get In Touch</span>
           </div>
@@ -700,6 +839,7 @@
             <a href="#automation-systems">What We Supply</a>
             <a href="#process-machines">Process Machines</a>
             <a href="#spares-components">Spares & Components</a>
+            <a href="#news">News &amp; Events</a>
             <a href="mailto:sales@apsinox.com">Contact Desk</a>
           </div>
 
