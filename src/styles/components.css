@@ -1738,3 +1738,96 @@
     justify-content: space-between;
   }
 }
+
+/* --------------------------------------------------------------------------
+   07.12 — Contact WhatsApp link + Floating WhatsApp button
+   -------------------------------------------------------------------------- */
+.coordinate-item address.coord-val {
+  font-style: normal;
+}
+
+.coord-wa-link {
+  margin-top: var(--space-1);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--aps-gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.coord-wa-link:hover {
+  color: var(--aps-inox-white);
+}
+
+.wa-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 6px 20px 6px 6px;
+  border-radius: var(--radius-pill);
+  background-color: var(--aps-gold);
+  color: var(--aps-charcoal);
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(13, 30, 61, 0.35);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.wa-float:hover {
+  background-color: var(--aps-gold-hover);
+  transform: translateY(-2px);
+}
+
+.wa-float:focus-visible {
+  outline: 2px solid var(--aps-inox-white);
+  outline-offset: 3px;
+}
+
+.wa-float-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--aps-navy);
+  color: var(--aps-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .wa-float {
+    right: 16px;
+    bottom: 16px;
+    padding: 6px;
+  }
+  .wa-float-label {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-float,
+  .wa-float:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* Clip the Section 01 watermark to its section (fixes mobile side-scroll) */
+#oem-direct {
+  overflow: hidden;
+}
+
+/* Mobile header: keep the menu toggle on-screen (quote CTA is covered by
+   the floating WhatsApp button and the Contact section on phones) */
+@media (max-width: 640px) {
+  .nav-actions .btn-primary {
+    display: none;
+  }
+}
