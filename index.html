@@ -22,6 +22,55 @@
   <meta name="theme-color" content="#0D1E3D">
 
   <link rel="stylesheet" href="./src/styles/main.css">
+
+  <!-- Structured data: Organization + News & Events section -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apsinox.com/#organization",
+        "name": "APS – Process and Automation Systems",
+        "url": "https://apsinox.com/",
+        "logo": "https://apsinox.com/assets/aps_logo.png",
+        "email": "sales@apsinox.com",
+        "telephone": "+971553606698",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Office CWS-1V-001833, 26th Floor, Amber Gem Tower, Sheikh Khalifa Street",
+          "addressLocality": "Ajman",
+          "addressCountry": "AE"
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "@id": "https://apsinox.com/#news-gulfood-manufacturing-2026",
+        "headline": "APS at Gulfood Manufacturing 2026",
+        "description": "Gulfood Manufacturing 2026 brings the food and beverage manufacturing industry to Dubai World Trade Centre from 3–5 November, covering ingredients, processing, packaging and supply chain. APS visited the show to follow new developments in food processing and automation.",
+        "datePublished": "2026-11-04",
+        "dateModified": "2026-11-04",
+        "url": "https://apsinox.com/#news",
+        "mainEntityOfPage": "https://apsinox.com/",
+        "image": "https://apsinox.com/assets/hero_automation.jpg",
+        "author": { "@id": "https://apsinox.com/#organization" },
+        "publisher": { "@id": "https://apsinox.com/#organization" },
+        "about": {
+          "@type": "Event",
+          "name": "Gulfood Manufacturing 2026",
+          "startDate": "2026-11-03",
+          "endDate": "2026-11-05",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Dubai World Trade Centre",
+            "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" }
+          }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -40,6 +89,7 @@
           <li><a href="#automation-systems" class="nav-link">What We Supply</a></li>
           <li><a href="#process-machines" class="nav-link">Process Machines</a></li>
           <li><a href="#spares-components" class="nav-link">Spares & Components</a></li>
+          <li><a href="#news" class="nav-link">News</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -614,14 +664,97 @@
     </section>
 
     <!-- ========================================================================
-         SECTION 05 — ENTERPRISE CONTACT & RFQ (Dark — Navy)
+         SECTION 05 — NEWS & EVENTS (Light — Inox White)
          ======================================================================== -->
-    <section id="contact" class="section section-dark" aria-labelledby="contact-heading">
-      <div class="container">
-        
+    <section id="news" class="section section-light" aria-labelledby="news-heading">
+      <div class="container" style="position: relative; z-index: 1;">
+
         <header class="studiova-opener fade-up delay-1">
           <div class="opener-meta">
             <span class="opener-num-circle">05</span>
+            <span class="opener-line"></span>
+            <span class="pill-label">News &amp; Events</span>
+          </div>
+          <div class="opener-title-wrap">
+            <h2 id="news-heading">News and events from APS</h2>
+            <p class="body-lead">Industry events, company updates and news from APS – Process and Automation Systems, serving food, beverage and process manufacturers across the UAE.</p>
+          </div>
+        </header>
+
+        <!-- News track: each .news-item is one entry. Add new entries at the start of the list.
+             Built as a list of equal cards so it can become an auto-sliding carousel,
+             with each card linking to its own detail page, once there are more entries. -->
+        <div class="news-layout">
+          <ul class="news-track" aria-label="Latest news and events">
+
+            <li class="news-item fade-up delay-2">
+              <article aria-labelledby="news-gulfood-title">
+                <!-- Venue photo pending: add class "news-head-photo" + style="--news-photo: url('/assets/news_dwtc_convention_gate.webp')" and the credit line below -->
+                <div class="news-item-head">
+                  <span class="accent-diamond" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,0 16,8 24,12 16,16 12,24 8,16 0,12 8,8"/></svg></span>
+                  <span class="news-head-big"><time datetime="2026-11-03">03–05</time></span>
+                  <span class="news-head-small">Nov 2026 · Dubai World Trade Centre</span>
+                </div>
+                <div class="news-item-body">
+                  <div class="news-meta">
+                    <span class="news-tag">Event</span>
+                    <time datetime="2026-11-04">November 2026</time>
+                  </div>
+                  <h3 id="news-gulfood-title" class="news-item-title">APS at Gulfood Manufacturing 2026</h3>
+                  <p class="news-item-desc">Gulfood Manufacturing 2026 brings the food and beverage manufacturing industry to Dubai World Trade Centre from <span class="nowrap">3–5 November</span>, covering ingredients, processing, packaging and supply chain. APS visited the show to follow new developments in food processing and automation.</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="news-item fade-up delay-3">
+              <article aria-labelledby="news-desk-title">
+                <div class="news-item-head">
+                  <span class="accent-diamond" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,0 16,8 24,12 16,16 12,24 8,16 0,12 8,8"/></svg></span>
+                  <span class="news-head-big">Ajman</span>
+                  <span class="news-head-small">United Arab Emirates</span>
+                </div>
+                <div class="news-item-body">
+                  <div class="news-meta">
+                    <span class="news-tag">Company</span>
+                    <time datetime="2026-11-04">November 2026</time>
+                  </div>
+                  <h3 id="news-desk-title" class="news-item-title">Reach our Ajman engineering desk on WhatsApp</h3>
+                  <p class="news-item-desc">Part numbers, project specifications and tender documents can be sent to the APS engineering sales desk on WhatsApp at <a href="https://wa.me/971553606698" class="news-inline-link" target="_blank" rel="noopener">+971&nbsp;553&nbsp;606698</a> or by email.</p>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+
+          <!-- Contact CTA: stays fixed beside the track -->
+          <aside class="news-cta-panel fade-up delay-4" aria-labelledby="news-cta-title">
+            <span class="news-cta-eyebrow">Engineering &amp; Sales Desk</span>
+            <h3 id="news-cta-title" class="news-cta-title">Talk to our team</h3>
+            <p class="news-cta-text">Planning a process line, an automation upgrade or sourcing OEM spares? Send us your specs or part numbers.</p>
+            <div class="news-cta-actions">
+              <a href="https://wa.me/971553606698?text=Hello%20APS%2C%20I%27d%20like%20to%20discuss%20a%20project%20or%20spare%20parts%20enquiry." class="btn btn-primary" target="_blank" rel="noopener">
+                <span>WhatsApp us</span>
+                <span class="btn-circle-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg></span>
+              </a>
+              <a href="mailto:sales@apsinox.com?subject=Enquiry%20-%20APS%20Process%20%26%20Automation%20Systems" class="btn btn-outline">
+                <span>Email us</span>
+                <span class="btn-circle-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 06 — ENTERPRISE CONTACT & RFQ (Dark — Navy)
+         ======================================================================== -->
+    <section id="contact" class="section section-dark" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="studiova-opener fade-up delay-1">
+          <div class="opener-meta">
+            <span class="opener-num-circle">06</span>
             <span class="opener-line"></span>
             <span class="pill-label">Get In Touch</span>
           </div>
@@ -715,6 +848,7 @@
             <a href="#automation-systems">What We Supply</a>
             <a href="#process-machines">Process Machines</a>
             <a href="#spares-components">Spares & Components</a>
+            <a href="#news">News &amp; Events</a>
             <a href="mailto:sales@apsinox.com">Contact Desk</a>
           </div>
 
