@@ -1553,6 +1553,26 @@
   border-bottom: 2px solid var(--aps-gold);
 }
 
+.news-head-photo {
+  background:
+    linear-gradient(180deg, rgba(13, 30, 61, 0.35) 0%, rgba(13, 30, 61, 0.9) 100%),
+    var(--news-photo) center 55% / cover no-repeat,
+    var(--aps-navy);
+}
+
+.news-photo-credit {
+  margin-top: var(--space-4);
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--aps-steel);
+}
+
+.news-photo-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .news-item-head .accent-diamond {
   position: absolute;
   top: var(--space-6);
