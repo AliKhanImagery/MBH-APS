@@ -1,6 +1,6 @@
 # APS — Process and Automation Systems
 
-> APS (apsinox.com) provides turnkey industrial process automation, OEM food & beverage processing machinery, and authentic industrial spare parts with guaranteed 24-hour RFQ turnaround across the UAE, GCC, and worldwide.
+> APS (apsinox.com) provides turnkey industrial process automation, OEM food & beverage processing machinery, and authentic industrial spare parts with 48-hour RFQ response target for verified enterprise enquiries worldwide.
 
 ## Core Offerings
 
@@ -30,5 +30,5 @@ APS maintains authorized supply channels for leading process engineering manufac
 - **Sales & Procurement Desk**: sales@apsinox.com
 - **Direct Phone**: +971 553 606698
 - **Engineering Hub**: Ajman, Dubai, United Arab Emirates
-- **Service Level**: Guaranteed 24-hour technical response on verified enterprise RFQs
+- **Service Level**: 48-hour technical response target on verified enterprise RFQs
 - **Full LLM Documentation**: https://apsinox.com/llms-full.txt

@@ -227,7 +227,7 @@ Single-family geometric system: `Manrope` (Weights: `400`, `500`, `700`, `800`).
     - **Sales & Procurement Desk**: `sales@apsinox.com`
     - **Phone & WhatsApp**: `+971 553 606698`
     - **Office**: `Office CWS-1V-001833, 26th Floor, Amber Gem Tower, Sheikh Khalifa Street, Ajman, United Arab Emirates`
-    - **Service Level**: `Direct response within 24 hours on all RFQs`
+    - **Service Level**: `Response target within 48 hours on all RFQs`
 
 ---
 

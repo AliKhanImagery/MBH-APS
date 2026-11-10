@@ -14,7 +14,7 @@
 - **Direct Telephone**: +971 553 606698
 - **Core Industry**: Industrial Process Engineering, Sanitary Food & Beverage Systems, Plant Automation, and OEM Spares Supply
 - **Geographic Coverage**: United Arab Emirates, Kingdom of Saudi Arabia, Qatar, Oman, Kuwait, Bahrain (GCC), Middle East & North Africa (MENA), and International Export.
-- **Service Level Agreement (SLA)**: Guaranteed direct technical review and formal RFQ quotation response within 24 hours.
+- **Service Level Agreement (SLA)**: Target direct technical review and formal RFQ quotation response within 48 hours.
 
 APS operates as an engineering and procurement partner for process industries—primarily carbonated soft drinks (CSD), dairy, juice, sauces, brewing, pharmaceuticals, and industrial water treatment plants. APS resolves critical supply chain delays by providing certified OEM machinery, skid engineering, control systems, and verified genuine replacement parts.
 
@@ -107,7 +107,7 @@ APS (Process and Automation Systems), online at apsinox.com, is an industrial pr
 Every spare part is sourced directly through primary manufacturer production channels and authenticated against OEM serial numbers and equipment master records. APS provides material certificates, certificates of origin, and manufacturer warranties.
 
 ### Q: What is the RFQ process and turnaround time?
-Clients submit part numbers, photos of nameplates, equipment serial numbers, or project tender documents to sales@apsinox.com. The technical engineering desk processes and issues formal quotations within 24 hours.
+Clients submit part numbers, photos of nameplates, equipment serial numbers, or project tender documents to sales@apsinox.com. The technical engineering desk processes and issues formal quotations within 48 hours.
 
 ### Q: Can APS supply complete turn-key plants or only individual components?
 APS delivers both: individual critical replacement parts (such as seals, pump rotors, heat exchanger plate packs) as well as complete turnkey process systems including engineering design, stainless steel skid fabrication, orbital piping installation, automation programming, and site commissioning.
@@ -116,7 +116,7 @@ APS delivers both: individual critical replacement parts (such as seals, pump ro
 
 ## 6. Procurement & Contact Coordinates
 
-For technical enquiries, parts cross-referencing, or immediate project tenders:
+For technical enquiries, parts cross-referencing, or enterprise project tenders:
 - **Email**: sales@apsinox.com
 - **Phone**: +971 553 606698
 - **Website**: https://apsinox.com

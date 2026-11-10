@@ -239,3 +239,25 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoPlay();
   }
 });
+
+// ── WhatsApp float: hide when #contact is in viewport ──────────────────────
+(function () {
+  const waBtn = document.querySelector('.wa-float');
+  const contactSection = document.getElementById('contact');
+  if (!waBtn || !contactSection) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          waBtn.classList.add('wa-float--hidden');
+        } else {
+          waBtn.classList.remove('wa-float--hidden');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  observer.observe(contactSection);
+})();
