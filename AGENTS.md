@@ -1,5 +1,11 @@
 # Project Guidelines & Agent Rules
 
+## Brand & Copy Rules (always apply)
+
+- **Never mention SSP** anywhere on the site: no name, logo, partnership, project credit or "SSP integration" wording, in visible copy, schema/JSON-LD, meta tags, alt text, llms.txt or image files. APS is presented independently.
+- Do not overpromise: no on-site installation/commissioning commitments in the UAE, no "built in UAE" claims, no invented numbers or stats.
+- Contact details: sales@apsinox.com, +971 553 606698 (phone & WhatsApp), Office CWS-1V-001833, 26th Floor, Amber Gem Tower, Sheikh Khalifa Street, Ajman, UAE.
+
 ## Bulk Design & Asset Workflows
 
 ### 1. Mandatory Reference Design First
