@@ -61,4 +61,14 @@
       <image:title>Sanitary Process Pump Spares and Mechanical Seal Kits</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://apsinox.com/spares/valves/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_valves.jpg</image:loc>
+      <image:title>Hygienic Process Valve Spares and Seal Kits</image:title>
+    </image:image>
+  </url>
 </urlset>
