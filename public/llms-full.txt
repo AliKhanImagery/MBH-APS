@@ -117,6 +117,9 @@ Clients submit part numbers, photos of nameplates, equipment serial numbers, or 
 ### Q: Can APS supply complete turn-key plants or only individual components?
 APS delivers both: individual critical replacement parts (such as seals, pump rotors, heat exchanger plate packs) as well as custom-engineered process packages including technical design, modular stainless steel skid fabrication, automation programming, and factory acceptance testing (FAT). Delivery scopes are agreed directly with the client.
 
+### Q: How do product recovery systems integrate with CIP operations?
+Sanitary product recovery (pigging) systems integrate directly ahead of Clean-in-Place (CIP) cycles. Using projectile food-grade silicone or EPDM pigs propelled by sterile compressed air or CO2, residual product is recovered from process piping with up to 98% efficiency before automated rinsing begins. This prevents product dilution, reduces wastewater BOD loading, and cuts CIP chemical and water consumption by over 60%.
+
 ---
 
 ## 6. Procurement & Contact Coordinates
