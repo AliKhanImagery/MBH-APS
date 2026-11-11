@@ -29,6 +29,7 @@ URL: https://apsinox.com/systems/csd-syrup-rooms/
 - **Automated Routing Valve Manifolds**: Mix-proof valve matrices configured for simultaneous CIP cleaning and product transfer without cross-contamination.
 
 ### 2.2 Dairy Industry Solutions
+URL: https://apsinox.com/systems/dairy-processing/
 - **HTST Pasteurizers**: High-Temperature Short-Time plate pasteurizers configured with regenerative heat recovery exceeding 90%, automated divert valves, and legal temperature recording.
 - **High-Pressure Homogenizers**: Multi-stage sanitary homogenizing valves operating up to 300 bar for milk, cream, and fermented dairy products.
 - **Centrifugal Separators**: Hermetic cream skimming separators, clarifiers, and bacteria removal centrifuges with automatic desludging.
@@ -91,6 +92,7 @@ URL: https://apsinox.com/spares/instrumentation/
 - **Supported Brands**: Endress+Hauser, Siemens, IFM Efector, Anderson-Negele, WIKA.
 
 ### 3.5 Automation Hardware & Electrical Cabinets
+URL: https://apsinox.com/spares/electrical-panels/
 - **Control Hardware**: Siemens S7-1200 / S7-1500 PLCs, I/O modules, communication processors (Profinet/Profibus), Schneider Electric, and Rockwell / Allen-Bradley.
 - **Motor Control**: Variable frequency drives (VFDs) including Danfoss VLT, ABB, and Siemens Sinamics.
 - **Panels**: Custom-built IP66 / NEMA 4X stainless steel enclosures with climate control and pneumatic solenoids.

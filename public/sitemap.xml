@@ -121,4 +121,24 @@
       <image:title>Industrial Water Treatment &amp; Reverse Osmosis (RO) Purification Skids</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://apsinox.com/spares/electrical-panels/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_electrical.jpg</image:loc>
+      <image:title>Industrial Electrical Control Panels and MCC Assemblies</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://apsinox.com/systems/dairy-processing/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/product_dairy.webp</image:loc>
+      <image:title>Sanitary Dairy Processing Systems and Automated HTST Pasteurizers</image:title>
+    </image:image>
+  </url>
 </urlset>

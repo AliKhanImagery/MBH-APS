@@ -712,6 +712,26 @@
   text-decoration: none;
   color: inherit;
   transition: transform var(--transition-normal);
+  cursor: pointer;
+}
+
+.product-card .product-action {
+  color: var(--aps-navy);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--aps-gold);
+  text-underline-offset: 3px;
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.product-card:hover .product-action {
+  color: var(--aps-gold);
+  transform: translateX(4px);
 }
 
 .product-img-wrap {
@@ -1272,6 +1292,24 @@
   line-height: 22px;
   color: var(--aps-steel);
   margin-bottom: 0;
+}
+
+.spares-team-card .spares-card-action {
+  color: var(--aps-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.spares-team-card:hover .spares-card-action {
+  color: var(--aps-inox-white);
+  transform: translateX(4px);
 }
 
 /* Carousel Controls & Indicators */
