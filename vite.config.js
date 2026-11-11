@@ -14,6 +14,7 @@ export default defineConfig({
         spares_valves: resolve(__dirname, 'spares/valves/index.html'),
         spares_heat_exchangers: resolve(__dirname, 'spares/heat-exchangers/index.html'),
         systems_csd: resolve(__dirname, 'systems/csd-syrup-rooms/index.html'),
+        systems_cip: resolve(__dirname, 'systems/cip-skids/index.html'),
       },
     },
   },

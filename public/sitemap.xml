@@ -91,4 +91,14 @@
       <image:title>Automated CSD Syrup Room Machinery and Process Line Packages</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://apsinox.com/systems/cip-skids/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/product_cip.png</image:loc>
+      <image:title>Automated Clean-in-Place (CIP) Multi-Tank Systems and Sanitization Skids</image:title>
+    </image:image>
+  </url>
 </urlset>

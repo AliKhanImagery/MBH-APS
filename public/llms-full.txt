@@ -23,6 +23,7 @@ APS operates as an engineering and procurement partner for process industries—
 ## 2. Process Machinery & Engineered Systems
 
 ### 2.1 Carbonated Soft Drinks (CSD) Process Systems
+URL: https://apsinox.com/systems/csd-syrup-rooms/
 - **Batch Syrup Preparation Rooms**: Stainless steel 316L mixing tanks, high-shear agitators, automated sugar dissolving units, mass flow rate measurement, and CIP sanitization loops.
 - **Continuous Carbonation Units**: Inline gas dosing, static carbonation manifolds, deaeration skids, and precision brix/CO2 analytical instrumentation.
 - **Automated Routing Valve Manifolds**: Mix-proof valve matrices configured for simultaneous CIP cleaning and product transfer without cross-contamination.
@@ -44,6 +45,7 @@ APS operates as an engineering and procurement partner for process industries—
 - **Ultraviolet (UV) Disinfection**: Stainless steel inline UV reactors ensuring microbial inactivation without chemical residue.
 
 ### 2.5 Clean-in-Place (CIP) Skids
+URL: https://apsinox.com/systems/cip-skids/
 - **Automated Multi-Tank Systems**: Configurations including caustic rinse, acid wash, fresh water, and recovery tanks.
 - **Automated Chemical Dosing**: Inline conductivity control ensuring precise detergent concentrations and temperature management.
 - **Hygienic Traceability**: Batch cycle logging compliant with 3-A Sanitary Standards and EHEDG guidelines.
@@ -59,12 +61,14 @@ APS operates as an engineering and procurement partner for process industries—
 APS supplies 100% factory-original replacement parts cross-referenced against equipment serial numbers and engineering BOMs (Bill of Materials):
 
 ### 3.1 Sanitary Process Pumps
+URL: https://apsinox.com/spares/pumps/
 - **Centrifugal Pumps**: Impellers, mechanical shaft seals (SiC/SiC, Carbon/SiC, EPDM, FKM), casing O-rings, and motors.
 - **Rotary Lobe Pumps**: Bi-wing and tri-lobe rotors, timing gears, mechanical seals, and wear plates.
 - **Progressive Cavity & Twin Screw Pumps**: Sanitary stators, rotors, and universal joints for shear-sensitive fluids.
 - **Supported Brands**: Alfa Laval (LKH, SolidC), Fristam, SPX Flow / APV, GEA Hilge, Waukesha Cherry-Burrell.
 
 ### 3.2 Process Valves & Actuation
+URL: https://apsinox.com/spares/valves/
 - **Mix-Proof Double-Seat Valves**: Radial seal sets, shaft seals, micro-switches, and pneumatic actuator overhaul kits.
 - **Single-Seat & Regulating Valves**: Plugs, diaphragms, and proportional positioners (4-20mA / IO-Link).
 - **Hygienic Butterfly Valves**: EPDM, Silicone, and FKM seal sleeves, manual levers, and pneumatic actuators.
@@ -72,6 +76,7 @@ APS supplies 100% factory-original replacement parts cross-referenced against eq
 - **Supported Brands**: Alfa Laval (Unique SSV, ThinkTop), GEA Tuchenhagen, SPX Flow / APV, Bardiani, Burkert, Pentair Südmo.
 
 ### 3.3 Heat Exchanger Spares
+URL: https://apsinox.com/spares/heat-exchangers/
 - **Plates**: Corrugated chevron plates in AISI 316L, AISI 304, Titanium, and Hastelloy.
 - **Gaskets**: Clip-on and glued gaskets in EPDM, NBR, and Viton (FKM) rated for sanitary food grade and CIP temperatures up to 160°C.
 - **Frame Hardware**: Zinc-coated and stainless steel tightening bolts, bearing boxes, and carrying bars.
@@ -110,7 +115,7 @@ Every spare part is sourced directly through primary manufacturer production cha
 Clients submit part numbers, photos of nameplates, equipment serial numbers, or project tender documents to sales@apsinox.com. The technical engineering desk processes and issues formal quotations within 48 hours.
 
 ### Q: Can APS supply complete turn-key plants or only individual components?
-APS delivers both: individual critical replacement parts (such as seals, pump rotors, heat exchanger plate packs) as well as complete turnkey process systems including engineering design, stainless steel skid fabrication, orbital piping installation, automation programming, and site commissioning.
+APS delivers both: individual critical replacement parts (such as seals, pump rotors, heat exchanger plate packs) as well as custom-engineered process packages including technical design, modular stainless steel skid fabrication, automation programming, and factory acceptance testing (FAT). Delivery scopes are agreed directly with the client.
 
 ---
 
