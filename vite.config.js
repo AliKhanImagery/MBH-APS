@@ -12,6 +12,7 @@ export default defineConfig({
         404: resolve(__dirname, '404.html'),
         spares_pumps: resolve(__dirname, 'spares/pumps/index.html'),
         spares_valves: resolve(__dirname, 'spares/valves/index.html'),
+        spares_heat_exchangers: resolve(__dirname, 'spares/heat-exchangers/index.html'),
       },
     },
   },
