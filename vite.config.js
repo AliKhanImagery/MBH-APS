@@ -13,6 +13,7 @@ export default defineConfig({
         spares_pumps: resolve(__dirname, 'spares/pumps/index.html'),
         spares_valves: resolve(__dirname, 'spares/valves/index.html'),
         spares_heat_exchangers: resolve(__dirname, 'spares/heat-exchangers/index.html'),
+        systems_csd: resolve(__dirname, 'systems/csd-syrup-rooms/index.html'),
       },
     },
   },
