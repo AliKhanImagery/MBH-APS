@@ -12,7 +12,7 @@
 
 ## Primary OEM Brands Supported
 
-APS maintains authorized supply channels for leading process engineering manufacturers including:
+APS sources and supplies OEM-grade components compatible with leading process engineering manufacturers including:
 - Alfa Laval
 - GEA Group
 - SPX Flow / APV
@@ -29,6 +29,6 @@ APS maintains authorized supply channels for leading process engineering manufac
 - **Domain**: https://apsinox.com
 - **Sales & Procurement Desk**: sales@apsinox.com
 - **Direct Phone**: +971 553 606698
-- **Engineering Hub**: Ajman, Dubai, United Arab Emirates
+- **Registered Office**: Ajman, United Arab Emirates
 - **Service Level**: 48-hour technical response target on verified enterprise RFQs
 - **Full LLM Documentation**: https://apsinox.com/llms-full.txt
