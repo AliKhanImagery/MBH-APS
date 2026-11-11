@@ -47,6 +47,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0D1E3D">
+  <link rel="preload" as="image" href="/assets/hero_automation.webp" type="image/webp" fetchpriority="high">
 
   <!-- Unified JSON-LD Entity Graph -->
   <script type="application/ld+json">
@@ -76,6 +77,20 @@
           "addressRegion": "Northern Emirates",
           "addressCountry": "AE"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.4052,
+          "longitude": 55.4424
+        },
+        "hasMap": "https://maps.google.com/?q=Amber+Gem+Tower+Ajman",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ],
         "areaServed": [
           { "@type": "Country", "name": "United Arab Emirates" },
           { "@type": "Country", "name": "Saudi Arabia" },
@@ -385,7 +400,10 @@
 
       <!-- Panel 2: Process & Automation Systems (Center with Subtle Macro Image) -->
       <article class="triptych-panel panel-automation">
-        <img src="/assets/hero_automation.jpg" alt="" class="panel-bg-img" aria-hidden="true" />
+        <picture>
+          <source srcset="/assets/hero_automation.webp" type="image/webp" />
+          <img src="/assets/hero_automation.jpg" alt="" class="panel-bg-img" aria-hidden="true" width="1200" height="800" loading="eager" fetchpriority="high" />
+        </picture>
         <div class="panel-overlay"></div>
         <div class="panel-content">
           <div class="section-meta-row fade-up delay-1">
@@ -412,7 +430,10 @@
 
       <!-- Panel 3: Machines & Spares (Right with Subtle Macro Image) -->
       <article class="triptych-panel panel-spares">
-        <img src="/assets/hero_machinery.jpg" alt="" class="panel-bg-img" aria-hidden="true" />
+        <picture>
+          <source srcset="/assets/hero_machinery.webp" type="image/webp" />
+          <img src="/assets/hero_machinery.jpg" alt="" class="panel-bg-img" aria-hidden="true" width="1200" height="800" loading="eager" />
+        </picture>
         <div class="panel-overlay"></div>
         <div class="panel-content">
           <div class="section-meta-row fade-up delay-1">
@@ -704,7 +725,10 @@
           <!-- Card 4: Water Treatment -->
           <article class="product-card fade-up delay-2">
             <div class="product-img-wrap">
-              <img src="/assets/product_water.png" alt="Industrial Water Treatment Plants" loading="lazy" />
+              <picture>
+                <source srcset="/assets/product_water.webp" type="image/webp" />
+                <img src="/assets/product_water.png" alt="Industrial Water Treatment Plants" width="600" height="600" loading="lazy" />
+              </picture>
               <div class="product-arrow-badge" aria-hidden="true">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -726,7 +750,10 @@
           <!-- Card 5: Clean-in-Place (CIP) -->
           <article class="product-card fade-up delay-3">
             <div class="product-img-wrap">
-              <img src="/assets/product_cip.png" alt="Automated Clean-in-Place CIP Skids" loading="lazy" />
+              <picture>
+                <source srcset="/assets/product_cip.webp" type="image/webp" />
+                <img src="/assets/product_cip.png" alt="Automated Clean-in-Place CIP Skids" width="600" height="600" loading="lazy" />
+              </picture>
               <div class="product-arrow-badge" aria-hidden="true">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
