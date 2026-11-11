@@ -82,6 +82,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://apsinox.com/spares/instrumentation/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/spares_poster_instrumentation.jpg</image:loc>
+      <image:title>Sanitary Process Instrumentation and Flowmeter Transmitters</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://apsinox.com/systems/csd-syrup-rooms/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>

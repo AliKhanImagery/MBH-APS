@@ -13,6 +13,7 @@ export default defineConfig({
         spares_pumps: resolve(__dirname, 'spares/pumps/index.html'),
         spares_valves: resolve(__dirname, 'spares/valves/index.html'),
         spares_heat_exchangers: resolve(__dirname, 'spares/heat-exchangers/index.html'),
+        spares_instrumentation: resolve(__dirname, 'spares/instrumentation/index.html'),
         systems_csd: resolve(__dirname, 'systems/csd-syrup-rooms/index.html'),
         systems_cip: resolve(__dirname, 'systems/cip-skids/index.html'),
         systems_water: resolve(__dirname, 'systems/water-treatment/index.html'),
