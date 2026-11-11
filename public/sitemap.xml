@@ -101,4 +101,14 @@
       <image:title>Automated Clean-in-Place (CIP) Multi-Tank Systems and Sanitization Skids</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://apsinox.com/systems/water-treatment/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://apsinox.com/assets/product_water.png</image:loc>
+      <image:title>Industrial Water Treatment &amp; Reverse Osmosis (RO) Purification Skids</image:title>
+    </image:image>
+  </url>
 </urlset>

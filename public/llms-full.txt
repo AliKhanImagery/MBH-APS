@@ -40,6 +40,7 @@ URL: https://apsinox.com/systems/csd-syrup-rooms/
 - **Pulp & Concentrate Blending**: High-viscosity continuous blending systems with load cell gravimetric dosing.
 
 ### 2.4 Industrial Water Treatment Plants
+URL: https://apsinox.com/systems/water-treatment/
 - **Multi-Stage Media Filtration**: Automated sand filters, multimedia filters, and activated carbon beds for chlorine, odor, and turbidity reduction.
 - **Reverse Osmosis (RO) Plants**: High-recovery spiral-wound membrane skids with anti-scalant dosing, CIP flush systems, and conductivity monitoring.
 - **Ultraviolet (UV) Disinfection**: Stainless steel inline UV reactors ensuring microbial inactivation without chemical residue.
