@@ -3,10 +3,11 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Navigation Scroll State (transparent -> navy at 60px)
+  // 1. Navigation Scroll State (transparent -> navy at 60px, solid on subpages)
   const nav = document.querySelector('.site-nav');
   const handleScroll = () => {
-    if (window.scrollY > 60) {
+    if (!nav) return;
+    if (document.body.classList.contains('page-subpage') || window.scrollY > 60) {
       nav.classList.add('scrolled');
     } else {
       nav.classList.remove('scrolled');

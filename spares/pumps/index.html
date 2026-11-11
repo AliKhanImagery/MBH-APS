@@ -190,6 +190,13 @@
             </svg>
           </span>
         </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -255,7 +262,10 @@
 
           <!-- Hero Image / Visual Anchor -->
           <div style="text-align: center;">
-            <img src="/assets/spares_poster_pumps.jpg" alt="APS Sanitary Process Pump Spares Poster" width="600" height="750" style="max-width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--aps-navy-15); box-shadow: 0 20px 40px rgba(0,0,0,0.4);" loading="eager" />
+            <picture>
+              <source srcset="/assets/spares_poster_pumps.webp" type="image/webp" />
+              <img src="/assets/spares_poster_pumps.jpg" alt="APS Sanitary Process Pump Spares Poster" width="600" height="750" style="max-width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--aps-navy-15); box-shadow: 0 20px 40px rgba(0,0,0,0.4);" loading="eager" fetchpriority="high" />
+            </picture>
           </div>
         </div>
 
