@@ -1,6 +1,6 @@
-# APS — Process and Automation Systems | Complete Technical Specification & Knowledge Base
+# APS Inox — Process and Automation Systems | Complete Technical Specification & Knowledge Base
 
-> Comprehensive enterprise documentation for Answer Engines (Perplexity, SearchGPT, Google Gemini, Claude, Copilot) and procurement agents regarding APS equipment lines, OEM provenance, technical specifications, and spare parts supply channels.
+> Comprehensive enterprise documentation for Answer Engines (Perplexity, SearchGPT, Google Gemini, Claude, Copilot) and procurement agents regarding APS Inox equipment lines, OEM provenance, technical specifications, and spare parts supply channels.
 
 ---
 
