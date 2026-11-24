@@ -1247,35 +1247,102 @@
         </header>
 
         <div class="split-7-5">
-          <!-- Left: Direct Technical Sales & RFQ Hub -->
+          <!-- Left: Direct Technical Sales & Fast-RFQ Hub -->
           <div class="fade-up delay-2">
             <div class="direct-email-panel">
-              <span class="direct-email-eyebrow">Direct Engineering & Sales Desk</span>
-              <h3 class="direct-email-title">Have a Project or Require Critical Spares?</h3>
+              <span class="direct-email-eyebrow">Interactive Fast-RFQ Desk</span>
+              <h3 class="direct-email-title">Request Spares or Project Tenders</h3>
               <p class="direct-email-desc">
-                Whether you are planning a turnkey process line, upgrading plant automation, or sourcing urgent OEM replacement parts — our technical sales team is ready to assist. Send your specifications, part numbers, or tender documents directly to our desk for a reply within 48 hours.
+                Select your required equipment category and target brand to generate an instant, pre-formatted technical RFQ via WhatsApp or official email — guaranteed response within 48 hours.
               </p>
 
-              <div class="direct-email-actions">
-                <a href="mailto:sales@apsinox.com?subject=Project%20Enquiry%20%2F%20RFQ%20-%20APS%20Process%20%26%20Automation%20Systems" class="btn btn-primary" id="email-client-btn">
-                  <span>Email sales@apsinox.com</span>
-                  <span class="btn-circle-icon">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
-                </a>
+              <!-- Interactive Fast-RFQ & BOM Selector Widget -->
+              <div class="fast-rfq-widget" id="fast-rfq-widget">
+                <div class="rfq-step">
+                  <label class="rfq-label">1. Equipment / Component Category</label>
+                  <div class="rfq-pills" id="rfq-category-pills" role="radiogroup" aria-label="Select Category">
+                    <button type="button" class="rfq-pill active" data-category="Sanitary Pumps &amp; Mechanical Seals" aria-pressed="true">Pumps &amp; Seals</button>
+                    <button type="button" class="rfq-pill" data-category="Hygienic Valves &amp; Seal Kits" aria-pressed="false">Process Valves</button>
+                    <button type="button" class="rfq-pill" data-category="Heat Exchangers &amp; Plates/Gaskets" aria-pressed="false">Heat Exchangers</button>
+                    <button type="button" class="rfq-pill" data-category="Instrumentation &amp; Flowmeters" aria-pressed="false">Instrumentation</button>
+                    <button type="button" class="rfq-pill" data-category="Electrical Control Panels &amp; MCC" aria-pressed="false">Electrical Panels</button>
+                    <button type="button" class="rfq-pill" data-category="Automated Clean-in-Place (CIP) Skids" aria-pressed="false">CIP Skids</button>
+                    <button type="button" class="rfq-pill" data-category="Syrup Manufacturing &amp; Dairy Systems" aria-pressed="false">Syrup &amp; Dairy Lines</button>
+                  </div>
+                </div>
 
-                <button type="button" class="btn btn-outline" id="copy-email-btn" data-email="sales@apsinox.com" aria-label="Copy email address to clipboard">
-                  <span id="copy-email-text">Copy Email Address</span>
-                  <span class="btn-circle-icon">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                  </span>
-                </button>
+                <div class="rfq-step">
+                  <label class="rfq-label">2. Target OEM Brand or System Family</label>
+                  <div class="rfq-chips" id="rfq-brand-chips" role="radiogroup" aria-label="Select Brand or System">
+                    <button type="button" class="rfq-chip active" data-brand="Alfa Laval" aria-pressed="true">Alfa Laval</button>
+                    <button type="button" class="rfq-chip" data-brand="GEA Group" aria-pressed="false">GEA</button>
+                    <button type="button" class="rfq-chip" data-brand="SPX APV" aria-pressed="false">SPX APV</button>
+                    <button type="button" class="rfq-chip" data-brand="Siemens" aria-pressed="false">Siemens</button>
+                    <button type="button" class="rfq-chip" data-brand="Endress+Hauser" aria-pressed="false">Endress+Hauser</button>
+                    <button type="button" class="rfq-chip" data-brand="Fristam" aria-pressed="false">Fristam</button>
+                    <button type="button" class="rfq-chip" data-brand="Tetra Pak" aria-pressed="false">Tetra Pak</button>
+                    <button type="button" class="rfq-chip" data-brand="Custom Engineering" aria-pressed="false">Custom Skid</button>
+                  </div>
+                </div>
+
+                <div class="rfq-step rfq-grid-2">
+                  <div>
+                    <label class="rfq-label" for="rfq-part-input">3. Part # / Model / Capacity</label>
+                    <input type="text" id="rfq-part-input" class="rfq-input" placeholder="e.g. LKH-20 mechanical seal / 2&quot; SSV kit" />
+                  </div>
+                  <div>
+                    <label class="rfq-label" for="rfq-urgency-select">4. Urgency &amp; Destination</label>
+                    <div class="rfq-input-group">
+                      <select id="rfq-urgency-select" class="rfq-select">
+                        <option value="Urgent Breakdown (24h)">Urgent Breakdown (24h)</option>
+                        <option value="Standard Maintenance / Stock" selected>Planned Maintenance</option>
+                        <option value="Capex Project Tender">Capex Project Tender</option>
+                      </select>
+                      <input type="text" id="rfq-location-input" class="rfq-input" placeholder="Location (e.g. Dubai, UAE)" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rfq-preview-wrap">
+                  <div class="rfq-preview-header">
+                    <span class="rfq-preview-tag">BOM Specification Preview</span>
+                    <span class="rfq-sla-pill">48-Hour Response SLA</span>
+                  </div>
+                  <div class="rfq-preview-body" id="rfq-preview-text">
+                    Sanitary Pumps &amp; Mechanical Seals &bull; Alfa Laval &bull; Spec: Standard OEM rebuild kit &bull; Planned Maintenance &bull; Dest: UAE / GCC
+                  </div>
+                </div>
+
+                <div class="direct-email-actions" style="margin-top: var(--space-6); margin-bottom: 0;">
+                  <a href="#" class="btn btn-primary" id="rfq-whatsapp-btn" target="_blank" rel="noopener">
+                    <span>Send via WhatsApp</span>
+                    <span class="btn-circle-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path>
+                      </svg>
+                    </span>
+                  </a>
+
+                  <a href="#" class="btn btn-outline" id="rfq-email-btn">
+                    <span>Email Official RFQ</span>
+                    <span class="btn-circle-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </span>
+                  </a>
+
+                  <button type="button" class="btn btn-outline" id="rfq-copy-btn" aria-label="Copy formatted RFQ to clipboard">
+                    <span id="rfq-copy-text">Copy RFQ</span>
+                    <span class="btn-circle-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
               </div>
 
               <div class="direct-email-guarantee">

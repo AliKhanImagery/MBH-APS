@@ -239,6 +239,121 @@ document.addEventListener('DOMContentLoaded', () => {
     createIndicators();
     startAutoPlay();
   }
+
+  // 7. Interactive Fast-RFQ & BOM Selector Desk
+  const rfqWidget = document.getElementById('fast-rfq-widget');
+  if (rfqWidget) {
+    const categoryPills = rfqWidget.querySelectorAll('.rfq-pill');
+    const brandChips = rfqWidget.querySelectorAll('.rfq-chip');
+    const partInput = document.getElementById('rfq-part-input');
+    const urgencySelect = document.getElementById('rfq-urgency-select');
+    const locationInput = document.getElementById('rfq-location-input');
+    const previewText = document.getElementById('rfq-preview-text');
+    const waBtn = document.getElementById('rfq-whatsapp-btn');
+    const emailBtn = document.getElementById('rfq-email-btn');
+    const copyBtn = document.getElementById('rfq-copy-btn');
+    const copyText = document.getElementById('rfq-copy-text');
+
+    let selectedCategory = 'Sanitary Pumps & Mechanical Seals';
+    let selectedBrand = 'Alfa Laval';
+
+    const getFormattedBOM = () => {
+      const part = partInput?.value?.trim() || 'Standard OEM rebuild kit / specification on file';
+      const urgency = urgencySelect?.value || 'Standard Maintenance';
+      const location = locationInput?.value?.trim() || 'UAE / GCC';
+
+      return {
+        category: selectedCategory,
+        brand: selectedBrand,
+        part,
+        urgency,
+        location
+      };
+    };
+
+    const updateRFQLinks = () => {
+      const bom = getFormattedBOM();
+      if (previewText) {
+        previewText.textContent = `${bom.category} • ${bom.brand} • Spec: ${bom.part} • ${bom.urgency} • Dest: ${bom.location}`;
+      }
+
+      const waMessage = `Hello APS Inox Engineering Desk,\nI would like to request an RFQ:\n• Category: ${bom.category}\n• Brand/OEM: ${bom.brand}\n• Part/Model/Spec: ${bom.part}\n• Urgency: ${bom.urgency}\n• Plant Location: ${bom.location}\n\nPlease confirm availability and technical quotation within 48 hours.`;
+
+      if (waBtn) {
+        waBtn.href = `https://wa.me/971553606698?text=${encodeURIComponent(waMessage)}`;
+      }
+
+      if (emailBtn) {
+        const emailSubject = `RFQ Request: ${bom.category} [${bom.brand}] - ${bom.urgency}`;
+        const emailBody = `Dear APS Inox Engineering Desk,\n\nPlease provide a formal technical quotation and availability for the following inquiry:\n\n1. Equipment Category: ${bom.category}\n2. Target Manufacturer / OEM: ${bom.brand}\n3. Part Number / Model / Capacity: ${bom.part}\n4. Urgency Level: ${bom.urgency}\n5. Plant Delivery Destination: ${bom.location}\n\nService Level: Target 48-Hour RFQ Response\n\nKind regards,\n[Your Name / Company / Contact Phone]`;
+        emailBtn.href = `mailto:sales@apsinox.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+      }
+    };
+
+    categoryPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        categoryPills.forEach(p => {
+          p.classList.remove('active');
+          p.setAttribute('aria-pressed', 'false');
+        });
+        pill.classList.add('active');
+        pill.setAttribute('aria-pressed', 'true');
+        selectedCategory = pill.getAttribute('data-category') || pill.textContent.trim();
+        updateRFQLinks();
+      });
+    });
+
+    brandChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        brandChips.forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('aria-pressed', 'false');
+        });
+        chip.classList.add('active');
+        chip.setAttribute('aria-pressed', 'true');
+        selectedBrand = chip.getAttribute('data-brand') || chip.textContent.trim();
+        updateRFQLinks();
+      });
+    });
+
+    if (partInput) partInput.addEventListener('input', updateRFQLinks);
+    if (urgencySelect) urgencySelect.addEventListener('change', updateRFQLinks);
+    if (locationInput) locationInput.addEventListener('input', updateRFQLinks);
+
+    if (copyBtn && copyText) {
+      copyBtn.addEventListener('click', async () => {
+        const bom = getFormattedBOM();
+        const textToCopy = `APS Inox RFQ Inquiry:\n• Category: ${bom.category}\n• Brand/OEM: ${bom.brand}\n• Part/Model: ${bom.part}\n• Urgency: ${bom.urgency}\n• Destination: ${bom.location}\nTarget Desk: sales@apsinox.com | +971 553 606698`;
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(textToCopy);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = textToCopy;
+            ta.style.position = 'fixed';
+            ta.style.left = '-999999px';
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          }
+          const orig = copyText.textContent;
+          copyText.textContent = 'Copied!';
+          copyBtn.style.borderColor = 'var(--aps-gold)';
+          setTimeout(() => {
+            copyText.textContent = orig;
+            copyBtn.style.borderColor = '';
+          }, 2500);
+        } catch (e) {
+          console.error('Failed to copy', e);
+        }
+      });
+    }
+
+    // Initialize links on load
+    updateRFQLinks();
+  }
 });
 
 // ── WhatsApp float: hide when #contact is in viewport ──────────────────────
