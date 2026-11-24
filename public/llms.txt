@@ -5,8 +5,8 @@
 ## Core Offerings
 
 - [OEM Direct Sourcing](https://apsinox.com/#oem-direct): 100% genuine provenance through manufacturer-authorised channels, specification compliance cross-referenced to original engineering datasheets, zero tolerance deviation, and full traceability.
-- [Process and Automation Systems](https://apsinox.com/#automation-systems): Turnkey mechanical & electrical installation, automated control architectures, PLC programming, DCS integration, SCADA engineering, and commissioning handover.
-- [Process Machinery & Line Solutions](https://apsinox.com/#process-machines): Complete modular processing lines for CSD (Carbonated Soft Drinks), Dairy, Juice & Liquid Food, Industrial Water Treatment (RO, UV, Media Filtration), Clean-in-Place (CIP skids), and Product Recovery (pigging systems).
+- [Process and Automation Systems](https://apsinox.com/#automation-systems): Industrial automation engineering, automated control architectures, PLC programming, DCS integration, and SCADA process engineering.
+- [Process Machinery & Line Solutions](https://apsinox.com/#process-machines): Complete modular processing lines for CSD Syrup Manufacturing, Beverage Process Systems, Dairy, Industrial Water Treatment (RO, UV, Media Filtration), Clean-in-Place (CIP systems), and Product Recovery (pigging systems).
 - [Critical Process Spares & Components](https://apsinox.com/#spares-components): Direct OEM replacement spares for sanitary pumps (centrifugal, lobe, progressive cavity), process valves (mix-proof, butterfly, aseptic diaphragm), plate and tubular heat exchangers, field instrumentation (pressure, flow, level, temperature), and IP66 stainless electrical cabinets.
 - [Frequently Asked Questions](https://apsinox.com/#faq): Procurement details, genuine OEM verification, supported brands, and delivery horizons.
 
@@ -16,10 +16,10 @@
 - [Hygienic Process Valves](https://apsinox.com/spares/valves/): Replacement seal kits, plug assemblies, actuators, and digital control tops for mix-proof, single-seat, and butterfly valves.
 - [Plate & Tubular Heat Exchangers](https://apsinox.com/spares/heat-exchangers/): OEM-grade clip-on and glued elastomer gaskets (NBR, EPDM, FKM) and replacement plates (AISI 316L, Titanium Gr. 1).
 - [Process Instrumentation & Sensors](https://apsinox.com/spares/instrumentation/): Electromagnetic & Coriolis flowmeters, flush pressure transmitters, Pt100 RTDs, and radar level sensors.
-- [Electrical Control Panels & MCC](https://apsinox.com/spares/electrical-panels/): Form 4 Motor Control Centers, VFD drive panels, PLC remote I/O junction boxes, and safety disconnect assemblies.
-- [CSD Syrup Room Equipment](https://apsinox.com/systems/csd-syrup-rooms/): Modular packages for carbonated soft drinks, continuous sugar dissolving, in-line ratio blending, deaeration, and carbonation skids.
-- [Dairy Processing Systems](https://apsinox.com/systems/dairy-processing/): Automated HTST plate pasteurizers, high-pressure two-stage homogenizers, centrifugal clarifiers, and aseptic tank farms.
-- [Automated Clean-in-Place (CIP) Skids](https://apsinox.com/systems/cip-skids/): 2-tank to 5-tank automated sanitization stations, chemical recovery loops, inline conductivity dosing, and mix-proof manifolds.
+- [Industrial Automation, Control Panels & MCC](https://apsinox.com/spares/electrical-panels/): Form 4 Motor Control Centers, VFD drive panels, PLC SCADA automation enclosures, and safety disconnect assemblies.
+- [CSD Syrup Manufacturing & Beverage Process Systems](https://apsinox.com/systems/csd-syrup-rooms/): Modular packages for syrup manufacturing plants, continuous sugar dissolving, sanitary beverage storage tanks, consistent batching, and carbonation skids.
+- [Dairy Processing Systems](https://apsinox.com/systems/dairy-processing/): Automated HTST plate pasteurizers, high-pressure two-stage homogenizers, centrifugal clarifiers, and aseptic beverage storage tanks.
+- [Automated Clean-in-Place (CIP Systems) & Product Recovery](https://apsinox.com/systems/cip-skids/): 2-tank to 5-tank automated sanitization stations, chemical recovery loops, product recovery pigging systems, and mix-proof manifolds.
 - [Industrial Water Treatment & RO Skids](https://apsinox.com/systems/water-treatment/): Reverse osmosis (RO) plants, multi-stage multimedia filtration, and sanitary UV disinfection reactors.
 
 ## Primary OEM Brands Supported

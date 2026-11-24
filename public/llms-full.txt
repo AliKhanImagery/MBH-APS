@@ -22,9 +22,11 @@ APS operates as an engineering and procurement partner for process industries—
 
 ## 2. Process Machinery & Engineered Systems
 
-### 2.1 Carbonated Soft Drinks (CSD) Process Systems
+### 2.1 CSD Syrup Manufacturing & Beverage Process Systems
 URL: https://apsinox.com/systems/csd-syrup-rooms/
-- **Batch Syrup Preparation Rooms**: Stainless steel 316L mixing tanks, high-shear agitators, automated sugar dissolving units, mass flow rate measurement, and CIP sanitization loops.
+- **Syrup Manufacturing Plants**: Automated turnkey syrup preparation plants, continuous sugar dissolving units up to 65° Brix, and consistent batching systems.
+- **Sanitary Beverage Storage Tanks**: Insulated, dimple-jacketed AISI 316L holding tanks (1,000L to 25,000L) with aseptic breathing filters.
+- **Consistent Batching & Precision Blending**: Dual Coriolis mass flowmeters and automated recipe execution ensuring ±0.05° Brix batch accuracy.
 - **Continuous Carbonation Units**: Inline gas dosing, static carbonation manifolds, deaeration skids, and precision brix/CO2 analytical instrumentation.
 - **Automated Routing Valve Manifolds**: Mix-proof valve matrices configured for simultaneous CIP cleaning and product transfer without cross-contamination.
 
@@ -46,10 +48,11 @@ URL: https://apsinox.com/systems/water-treatment/
 - **Reverse Osmosis (RO) Plants**: High-recovery spiral-wound membrane skids with anti-scalant dosing, CIP flush systems, and conductivity monitoring.
 - **Ultraviolet (UV) Disinfection**: Stainless steel inline UV reactors ensuring microbial inactivation without chemical residue.
 
-### 2.5 Clean-in-Place (CIP) Skids
+### 2.5 Automated Clean-in-Place (CIP Systems) & Product Recovery
 URL: https://apsinox.com/systems/cip-skids/
-- **Automated Multi-Tank Systems**: Configurations including caustic rinse, acid wash, fresh water, and recovery tanks.
+- **Automated Multi-Tank CIP Systems**: Configurations including caustic rinse, acid wash, fresh water, and recovery tanks (500L to 15,000L).
 - **Automated Chemical Dosing**: Inline conductivity control ensuring precise detergent concentrations and temperature management.
+- **Integrated Product Recovery**: Sanitary pigging loops deployed ahead of CIP recovering up to 98% of line product and cutting wastewater BOD.
 - **Hygienic Traceability**: Batch cycle logging compliant with 3-A Sanitary Standards and EHEDG guidelines.
 
 ### 2.6 Product Recovery & Pigging Systems
